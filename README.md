@@ -1,13 +1,9 @@
 # IPL Auction Assistant
 
-A college project. It helps a bidder during the IPL player auction by showing money left, spots left, which players to bid for, and the most to pay.
+A web app for one team's bidder at the IPL auction. It shows the maximum price to pay (or "Skip") for the player on the block, and updates after every sale.
 
-First version status:
-- The data in the two sample csv files is SAMPLE data, invented to show how the app works. It is not real IPL data.
-- The chatbot answers only from the data table.
+**Data:** all player and team numbers are SAMPLE data (invented). They are not real IPL data. Real data will replace them.
 
-Files:
-- app.py: the whole app
-- sample_players.csv: sample player list
-- sample_teams.csv: sample team money and squad
-- requirements.txt: tools the app needs
+Files: app.py (screens), engine.py (rules and maths), db.py (login and saving), schema.sql (database tables), sample_players.csv, sample_teams.csv.
+
+Built with Python, Streamlit, pandas, numpy and Supabase.
