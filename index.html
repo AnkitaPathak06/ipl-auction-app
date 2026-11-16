@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>IPL Auction Assistant</title>
+<title>Cricket IQ</title>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{--ink:#15122E;--mu:#5E5A7A;--ac:#4F2FE0;--acs:#ECE8FF;--gr:#0F8A43;--grs:#E1F5E8;--rd:#C8202A;--rds:#FDE8E9;--am:#FFD23F;--ams:#FFF3C4;--bg:#F3F2FA;--bd:#E3E0F3;--card:#fff}
@@ -140,7 +140,7 @@ svg.ic{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2;strok
 .snd[aria-pressed=false]{color:#9892C8}
 .bob{display:inline-flex;animation:bob 3s ease-in-out infinite}
 @keyframes bob{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-4px) rotate(3deg)}}
-.fab{position:fixed;right:12px;bottom:72px;z-index:50;display:flex;align-items:center;gap:6px;background:#fff;border:2px solid var(--ac);border-radius:999px;padding:3px 16px 3px 6px;box-shadow:0 8px 22px rgba(79,47,224,.35);font-weight:800;color:var(--ac)}
+.fab{position:fixed;left:12px;bottom:72px;z-index:50;display:flex;align-items:center;gap:6px;background:#fff;border:2px solid var(--ac);border-radius:999px;padding:3px 16px 3px 6px;box-shadow:0 8px 22px rgba(79,47,224,.35);font-weight:800;color:var(--ac)}
 .fab.open{background:var(--ac);color:#fff}
 .fab .fl{font-size:14px}
 .cpanel{position:fixed;left:10px;right:10px;bottom:140px;height:min(66vh,520px);z-index:50;background:#fff;border:2px solid var(--ac);border-radius:20px;box-shadow:0 14px 40px rgba(21,18,46,.35);display:flex;flex-direction:column;padding:0 12px 12px;overflow:hidden;animation:rise .2s ease-out}
@@ -187,8 +187,8 @@ svg.ic{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2;strok
 @media(min-width:760px){.bidtop{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr)}}
 @media(min-width:1000px){
  .shell{grid-template-columns:200px minmax(0,1fr)}
- .fab{right:20px;bottom:20px}
- .cpanel{left:auto;right:20px;bottom:96px;width:380px;height:min(600px,calc(100vh - 200px))}
+ .fab{left:20px;right:auto;bottom:76px}
+ .cpanel{left:20px;right:auto;bottom:152px;width:380px;height:min(600px,calc(100vh - 250px))}
  .login .b{border-radius:0;padding:40px}
 }
 @media(prefers-reduced-motion:reduce){.bob,.hero.pop .big,.soldb,.cpanel,#fx{animation:none}}
@@ -229,6 +229,26 @@ svg.ic{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2;strok
 .appname{padding-bottom:.1em}.lead{margin-top:4px}.tc .bd{padding:12px 14px}
 .appname .w2{font-size:clamp(30px,8.6vw,48px);letter-spacing:-.03em;white-space:nowrap;line-height:1.05}@media(min-width:1000px){.appname .w2{font-size:clamp(34px,4vw,60px)}}
 .lead{margin-bottom:14px}.scene{margin-top:8px}
+
+.jr{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:16px}
+.jr-spot{position:absolute;inset:0;background:radial-gradient(circle at 50% 42%,#ffffff2e,transparent 55%);opacity:0;animation:jrf .6s .1s forwards}
+.jr-j{position:relative;width:210px;opacity:0;transform:translateY(-220px) rotateY(180deg);animation:jrin 1.1s .15s cubic-bezier(.3,1.4,.5,1) forwards;overflow:hidden}
+.jr-j svg{display:block;width:100%;filter:drop-shadow(0 12px 14px #0008)}
+.jr-n{position:absolute;left:0;right:0;top:92px;text-align:center;font-weight:900;letter-spacing:.06em}
+.jr-no{position:absolute;left:0;right:0;top:108px;text-align:center;font-weight:900;font-size:62px;line-height:1}
+.jr-sh{position:absolute;inset:0;background:linear-gradient(110deg,transparent 40%,#ffffff66 50%,transparent 60%);transform:translateX(-120%);animation:jrs .9s 1.2s forwards}
+.jr-tag{position:relative;margin-top:2px;padding-top:12px;opacity:0;transform-origin:50% 0;animation:jrf .3s 1.1s forwards,jrsw 2.4s 1.1s ease-out}
+.jr-tag:before{content:"";position:absolute;left:50%;top:0;width:2px;height:12px;background:#ffd23f}
+.jr-p{background:#ffd23f;color:#15122E;border-radius:10px;padding:7px 22px 8px;text-align:center;box-shadow:0 6px 12px #0006}
+.jr-p small{display:block;font-size:10px;line-height:1;letter-spacing:.18em;font-weight:800;color:#6b5200;margin-bottom:4px}
+.jr-p b{display:block;font-size:24px;line-height:1;font-weight:900}
+.jr-w{margin-top:24px;text-align:center;color:#fff;opacity:0;animation:jrf .4s 1.5s forwards}
+.jr-w b{display:block;font-size:20px;line-height:1.2}.jr-w span{display:block;font-size:13px;margin-top:4px;color:#b9c4ff;font-weight:700;letter-spacing:.04em}
+@keyframes jrf{to{opacity:1}}
+@keyframes jrin{to{opacity:1;transform:none}}
+@keyframes jrs{to{transform:translateX(120%)}}
+@keyframes jrsw{0%{transform:rotate(26deg)}25%{transform:rotate(-16deg)}50%{transform:rotate(10deg)}75%{transform:rotate(-4deg)}100%{transform:rotate(0)}}
+@media(prefers-reduced-motion:reduce){.jr *{animation-duration:.01s!important}}
 </style>
 </head>
 <body>
@@ -275,7 +295,8 @@ function teams(){
 }
 const reserve=t=>Math.max(0,t.spots-1)*S.rules.low;
 const afford=(t,p)=>t.spots>0&&!(p.os&&t.os<=0)&&t.money-reserve(t)>=Math.max(p.fair,p.base);
-const isUnsold=i=>!S.sales.some(s=>s[0]===i)&&!RET0.some(r=>r[0]===i);
+const isUnsold=i=>!S.sales.some(s=>s[0]===i)&&!RET0.some(r=>r[0]===i)&&!S.extraRet.some(r=>r.pi===i);
+const maxRet=()=>S.type==='Mega'?6:S.rules.squad;
 function plan(me){
   const amt=S.pct.map(p=>S.budget*p/100),spent=[0,0,0,0,0];
   S.sales.filter(s=>s[1]===me.id).forEach(s=>{spent[P[s[0]].ri]+=s[2];});
@@ -285,6 +306,8 @@ function wt(me,k){ // team weights: weak area gets a boost, strength is kept
   if(k===2)return 1.0;const weakBat=me.batRank>=me.bowlRank,isBat=k<=1,weak=isBat?weakBat:!weakBat;
   const w=me.posN>=7?[1.5,0.7]:me.posN<=4?[1.2,1.0]:[1.3,0.8];return weak?w[0]:w[1];
 }
+let TT=null;
+const statFor=x=>{const ps=x.stats.split(' | ');if(x.ri<=1)return ps.find(s=>s.startsWith('SR'))||ps[0];if(x.ri>=3)return ps.find(s=>s.startsWith('econ'))||ps[0];return ps.join(' · ');};
 const needs=(t,k)=>(t.have[k]-S.want[k]<0)&&(k===2||wt(t,k)>=1.2);
 function ev(x,me,pl){
   const k=x.ri,rl=pl.left[k],role=x.role.toLowerCase(),art=/^[aeiou]/.test(role)?'an ':'a ';
@@ -299,9 +322,14 @@ function ev(x,me,pl){
   else if(rl<x.base){skip=true;reason='Skip. No plan budget left for '+art+role+'.';}
   else if(cap<x.base){skip=true;reason='Skip. Not enough money left after keeping '+fmt(reserve(me))+' for your other spots.';}
   else if(x.fair<x.base*0.8){skip=true;reason='Skip. His fair price ('+fmt(x.fair)+') is below his starting price ('+fmt(x.base)+').';}
-  else if(rl<cap){fit='Tight fit';ceil=r05(Math.max(rl,x.base));reason='Tight fit. You need '+art+role+' but only '+fmt(rl)+' of your plan is left for that role.';}
-  else reason='Good fit. You need '+art+role+' and have '+pct+'% of your '+role+' budget left.';
-  if(!skip&&weak)reason+=' Helps your weak '+area+'.';
+  else if(rl<cap){fit='Tight fit';ceil=r05(Math.max(rl,x.base));}
+  if(!skip){
+    const rank=k<=1?me.batRank:me.bowlRank,riv=TT?TT.filter(t=>t.id!==me.id&&afford(t,x)&&needs(t,k)).length:0;
+    const head=fit==='Tight fit'?'Tight fit. Good '+role+', but only '+fmt(rl)+' of your '+role+' plan is left.':'Good fit. Fills a gap: you have '+me.have[k]+' of '+S.want[k]+' '+role+'s.';
+    const mid=weak?' Your '+area+' ranked '+ord(rank)+' of 10 last season.':(riv>=3?' '+riv+' rivals also need a '+role+'.':'');
+    const form=x.exp<500?' Few IPL matches so far ('+statFor(x)+').':' IPL record: '+statFor(x)+'.';
+    reason=head+mid+form;
+  }
   if(skip)fit='No fit';
   return {skip,reason,fit,ceil,pct,rl,w};
 }
@@ -318,7 +346,7 @@ function saveS(){try{const o={};SAVE.forEach(k=>o[k]=S[k]);localStorage.setItem(
 function loadS(team){try{const o=JSON.parse(localStorage.getItem('ipl-auction-v1-'+team)||'null');if(o)SAVE.forEach(k=>{if(o[k]!==undefined)S[k]=o[k];});}catch(e){}}
 
 /* ============ VIEWS ============ */
-S.sound=true;S.music=true;S.teamSel='CSK';S.open={};S.chatOpen=false;S.retErr='';S.pop=false;S.rf={n:'',p:'',r:ROLES[0],t:'Indian'};S.q='';S.qf='all';S.sheet=null;S.toast='';S.tab='bid';
+S.doneErr='';S.sound=true;S.music=true;S.teamSel='CSK';S.open={};S.chatOpen=false;S.retErr='';S.pop=false;S.rf={n:'',p:'',r:ROLES[0],t:'Indian'};S.q='';S.qf='all';S.sheet=null;S.toast='';S.tab='bid';
 const wide=()=>window.innerWidth>=1000;
 const IC={
  bid:'<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/>',
@@ -346,7 +374,7 @@ const sn=n=>{const a=n.split(' ');return a.length>1?a[0][0]+'. '+a.slice(1).join
 function loginView(){
   return `<div class="login">
    <div class="a"><div class="hdline"><span class="bob">${mascot(46)}</span><span class="tag">Auction day helper</span></div>
-    <h2 class="appname"><span class="w1">IPL</span><span class="w2">Auction Assistant</span></h2>
+    <h2 class="appname"><span class="w1">Cricket</span><span class="w2">IQ</span></h2>
     <p class="lead">One clear answer for every player. Bid or skip.</p>
     ${scene()}
     <div class="hoot"><span class="bob">${mascot(48)}</span><span><b>Hootie</b> the owl is your helper. Ask it anything once you log in.</span></div></div>
@@ -355,12 +383,11 @@ function loginView(){
     <div><label class="lbl" for="lt">Team</label><select id="lt" class="fld" data-in="loginTeam">${TEAMS.map(t=>`<option value="${t.id}" ${S.loginTeam===t.id?'selected':''}>${t.name} (${t.id})</option>`).join('')}</select></div>
     <div><label class="lbl" for="lp">Access code</label><input id="lp" class="fld" type="password" value="demo123"></div>
     <button class="btn w" data-act="login">Log in</button>
-    <button class="btn2 w mus" data-act="mus" aria-pressed="${S.music}">${ic(S.music?'snd':'mute')} Music ${S.music?'on':'off'}</button>
-    <div class="mu" style="font-size:12px">Demo login: any code works. First time? Setup comes next.</div></div></div></div>`;
+    <button class="btn2 w mus" data-act="mus" aria-pressed="${S.music}">${ic(S.music?'snd':'mute')} Music ${S.music?'on':'off'}</button></div></div></div>`;
 }
 /* ---------- shared pieces ---------- */
 function topBar(me){
-  return `<header class="top"><div class="ar"><span class="lg">IPL Auction <i>Assistant</i></span><span class="nm" style="text-align:right">${tpS(me)} ${me.name}</span><button class="snd" data-act="snd" aria-label="${S.sound?'Mute sound':'Turn sound on'}" aria-pressed="${S.sound}">${ic(S.sound?'snd':'mute')}</button></div>
+  return `<header class="top"><div class="ar"><span class="lg">Cricket <i>IQ</i></span><span class="nm" style="text-align:right">${tpS(me)} ${me.name}</span></div>
    <div class="pills"><div class="pill m"><small>Money left</small><b>${fmt(me.money)}</b></div><div class="pill"><small>Spots left</small><b>${me.spots}</b></div><div class="pill"><small>Overseas spots</small><b>${me.os}</b></div></div></header>`;
 }
 const NAV=[['bid','Bid'],['picks','Recs'],['rivals','Rivals'],['squad','Squad'],['more','More']];
@@ -432,7 +459,7 @@ function bidView(me,T,pl){
       <div class="row"><span class="mu">Role plan</span><b>${fmt(pl.amt[k])}</b></div>
       <div class="row"><span class="mu">Spent · left</span><b>${fmt(pl.spent[k])} · ${fmt(pl.left[k])}</b></div>
       <div class="row"><span class="mu">${e.skip?'If skipped':'If you win at '+fmt(e.ceil)}</span><b>${fmt(e.skip?me.money:me.money-e.ceil)} left</b></div>
-      <div class="row"><span class="mu">Past stats</span><b>${p.stats}</b></div></div>
+      <div class="row"><span class="mu">Past stats</span><b>${statFor(p)}</b></div></div>
     </div></div>
    <div class="pair">
     <div class="card"><h3>Rival demand</h3><div style="font-weight:700;margin-bottom:8px">${can.length} rivals can afford him. ${need.length} need a ${role}.</div>
@@ -525,14 +552,14 @@ function setupView(me){
      <div style="display:grid;grid-template-columns:.7fr 1fr 1fr;gap:6px;align-items:center"><span class="lbl" style="margin:0">Team</span><span class="lbl" style="margin:0">Money (cr)</span><span class="lbl" style="margin:0">Spots</span>
      ${TEAMS.filter(t=>t.id!==me.id).map(t=>{const v=S.rival[t.id]||{};return `<b>${t.id}</b><input class="fld" data-in="rm_${t.id}" value="${v.money!=null?v.money:''}" placeholder="${S.rules.purse}" inputmode="decimal" aria-label="${t.id} money" style="text-align:center"><input class="fld" data-in="rs_${t.id}" value="${v.spots!=null?v.spots:''}" placeholder="${S.rules.squad}" inputmode="numeric" aria-label="${t.id} spots" style="text-align:center">`}).join('')}</div></div></div>
    <div class="stack"><div class="card stack" style="gap:10px"><h3>2. My plan</h3><div><label class="lbl" for="pb">Budget left after retentions (cr)</label><input id="pb" class="fld" data-in="budget" value="${S.budget}" inputmode="decimal" style="font-size:20px;font-weight:800"></div>
-    <span class="lbl" style="margin:0">Retained players</span><div>${ret.map(r=>`<div class="row"><span><b>${esc(r.name)}</b><br><span class="mu" style="font-size:12px">${r.role} · ${r.nat}</span></span><span style="display:flex;align-items:center;gap:8px"><b>${fmt(r.price)}</b>${r.x!==undefined?`<button class="btn2" data-act="delret" data-x="${r.x}" aria-label="Remove ${esc(r.name)}" style="height:32px;padding:0 10px">Remove</button>`:''}</span></div>`).join('')}</div>
-    <div class="grid" style="grid-template-columns:1fr 1fr"><input id="rn" class="fld" placeholder="Name" value="${esc(S.rf.n)}" aria-label="Retained player name"><select id="rr" class="fld" aria-label="Role">${ROLES.map(r=>`<option ${S.rf.r===r?'selected':''}>${r}</option>`).join('')}</select><select id="rt" class="fld" aria-label="Nationality">${['Indian','Overseas'].map(n=>`<option ${S.rf.t===n?'selected':''}>${n}</option>`).join('')}</select><input id="rp" class="fld" placeholder="Price (cr)" value="${esc(S.rf.p)}" inputmode="decimal" aria-label="Price"></div>${S.retErr?`<div class="al bad" role="alert"><b>FIX</b><span>${S.retErr}</span></div>`:''}<button class="btn2" data-act="addret">Add retained player</button></div>
+    <span class="lbl" style="margin:0">Retained players · ${S.extraRet.length} of ${maxRet()} allowed${S.type==='Mega'?' (Mega auction: max 6)':''}</span>${S.extraRet.length>maxRet()?`<div class="al bad" role="alert"><b>FIX</b><span>Too many retained players for a ${S.type} auction. Remove ${S.extraRet.length-maxRet()}.</span></div>`:''}<div>${ret.map(r=>`<div class="row"><span><b>${esc(r.name)}</b><br><span class="mu" style="font-size:12px">${r.role} · ${r.nat}</span></span><span style="display:flex;align-items:center;gap:8px"><b>${fmt(r.price)}</b>${r.x!==undefined?`<button class="btn2" data-act="delret" data-x="${r.x}" aria-label="Remove ${esc(r.name)}" style="height:32px;padding:0 10px">Remove</button>`:''}</span></div>`).join('')}</div>
+    <div class="grid" style="grid-template-columns:1fr 1fr"><datalist id="pn">${P.map(x=>`<option value="${esc(x.name)}">`).join('')}</datalist><input id="rn" list="pn" class="fld" placeholder="Name" value="${esc(S.rf.n)}" aria-label="Retained player name"><select id="rr" class="fld" aria-label="Role">${ROLES.map(r=>`<option ${S.rf.r===r?'selected':''}>${r}</option>`).join('')}</select><select id="rt" class="fld" aria-label="Nationality">${['Indian','Overseas'].map(n=>`<option ${S.rf.t===n?'selected':''}>${n}</option>`).join('')}</select><input id="rp" class="fld" placeholder="Price (cr)" value="${esc(S.rf.p)}" inputmode="decimal" aria-label="Price"></div>${S.retErr?`<div class="al bad" role="alert"><b>FIX</b><span>${S.retErr}</span></div>`:''}<button class="btn2" data-act="addret">Add retained player</button></div>
     <div class="card stack" style="gap:10px"><h3>3. Target roles and spend split</h3><div style="display:grid;grid-template-columns:1.4fr .8fr .8fr;gap:8px;align-items:center"><span class="lbl" style="margin:0">Role</span><span class="lbl" style="margin:0">How many</span><span class="lbl" style="margin:0">Spend %</span>
      ${ROLES.map((r,k)=>`<b>${r}</b><input class="fld" data-in="want${k}" value="${S.want[k]}" aria-label="${r} how many" style="text-align:center;font-weight:700"><input class="fld" data-in="pct${k}" value="${S.pct[k]}" aria-label="${r} spend percent" style="text-align:center;font-weight:700">`).join('')}
      <span class="lbl" style="margin:0">Total</span><b style="text-align:center">${wantTotal}</b><b style="text-align:center" class="${okPct?'gr':'rd'}">${pctTotal}%</b></div>
      <div class="al ${okPct?'ok':'bad'}"><b>${okPct?'OK':'FIX'}</b><span>${okPct?'Spend split adds up to 100%. Good.':'Spend split must add to 100%. It is '+pctTotal+'% now.'}</span></div>
      ${wantTotal>S.rules.squad?`<div class="al warn"><b>WARNING</b><span>Target roles add up to ${wantTotal}, more than the squad size of ${S.rules.squad}.</span></div>`:''}
-     <button class="btn w" data-act="done">Done, start bidding</button></div></div></div>`;
+     ${S.doneErr?`<div class="al bad" role="alert"><b>FIX</b><span>${S.doneErr}</span></div>`:''}<button class="btn w" data-act="done">Done, start bidding</button></div></div></div>`;
 }
 
 /* ---------- MORE (phone menu) ---------- */
@@ -609,7 +636,7 @@ function teamDetail(t,me){
    <div><span class="lbl">Roles: have / want</span><div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 16px">${ROLES.map((r,j)=>`<span style="display:flex;justify-content:space-between"><span class="mu">${r}</span><b class="${t.have[j]>=S.want[j]?'gr':''}">${t.have[j]}/${S.want[j]}</b></span>`).join('')}</div></div>`;
 }
 function appView(){
-  const T=teams(),me=T.find(t=>t.id===S.me),pl=plan(me);
+  const T=teams();TT=T;const me=T.find(t=>t.id===S.me),pl=plan(me);
   const body={bid:()=>bidView(me,T,pl),picks:()=>picksView(me,T,pl),rivals:()=>rivalsView(me,T),squad:()=>squadView(me,T,pl),more:moreView,record:()=>recordView(me,T),players:()=>playersView(me,T),setup:()=>setupView(me)}[S.tab]();
   return topBar(me)+`<div class="shell">${navs()}<main class="main">${body}</main></div>${sheetView(me,T,pl)}${S.toast?`<div class="toast" role="status">${S.toast}</div>`:''}`;
 }
@@ -735,86 +762,22 @@ function sJingle(c,t,v){
 let fxStop=null;
 function celebrate(p,buyer,price){
   if(fxStop)fxStop();
-  const mine=buyer===S.me,tm=TEAMS.find(t=>t.id===buyer)||{name:buyer,color:'#FFD23F'};
-  const reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const EXP=[.8,1.3,1.8,2.3,2.9,3.5,4.0];
-  const c=actx();
-  if(c){const t=c.currentTime+.02;sJingle(c,t,.18);sCheer(c,t+.1,4.2,.05);if(!reduce)EXP.forEach(x=>{sBoom(c,t+x,.35);sCrackle(c,t+x,.05);});}
-  $fx.innerHTML=`${reduce?'':'<canvas id="fxc"></canvas>'}<div class="soldb ${mine?'mine':''}"><small>${esc(p.name)}</small><b>${mine?'YOU WON HIM!':'SOLD!'}</b><span>${mine?'for':'to '+esc(tm.name)+' for'} ${fmt(price)}</span><i>Tap to skip</i></div>`;
+  const tm=TEAMS.find(t=>t.id===buyer)||{id:buyer,name:buyer,color:'#4F2FE0',ink:'#fff'};
+  const n=S.sales.filter(s=>s[1]===buyer).length,sur=p.name.split(' ').slice(-1)[0].toUpperCase(),fs=sur.length>9?9:sur.length>7?10:12;
+  $fx.innerHTML=`<div class="jr"><div class="jr-spot"></div>
+   <div class="jr-j"><svg viewBox="0 0 200 200" aria-hidden="true"><path d="M60 20 L85 12 Q100 30 115 12 L140 20 L188 56 L162 88 L142 74 L142 188 L58 188 L58 74 L38 88 L12 56 Z" fill="${tm.color}" stroke="${tm.ink}" stroke-width="4" stroke-linejoin="round"/><path d="M85 12 Q100 30 115 12" fill="none" stroke="${tm.ink}" stroke-width="6"/><path d="M12 56 L38 88 M188 56 L162 88" stroke="${tm.ink}" stroke-width="8"/></svg>
+    <div class="jr-n" style="color:${tm.ink};font-size:${fs}px">${esc(sur)}</div><div class="jr-no" style="color:${tm.ink}">${n}</div><div class="jr-sh"></div></div>
+   <div class="jr-tag"><div class="jr-p"><small>SOLD FOR</small><b>${fmt(price)}</b></div></div>
+   <div class="jr-w"><b>${esc(p.name)}</b><span>joins ${esc(tm.name)}</span></div></div>`;
   $fx.classList.add('on');
-  let raf=0,timer=0,done=false;
-  const end=()=>{if(done)return;done=true;cancelAnimationFrame(raf);clearTimeout(timer);$fx.classList.remove('on');$fx.innerHTML='';fxStop=null;};
-  fxStop=end;$fx.onclick=end;
-  if(reduce){timer=setTimeout(end,2200);return;}
-  const cv=document.getElementById('fxc'),g=cv.getContext('2d'),dpr=Math.min(2,window.devicePixelRatio||1);
-  let W=innerWidth,H=innerHeight;cv.width=W*dpr;cv.height=H*dpr;g.scale(dpr,dpr);
-  const pal=[tm.color,'#FFD23F','#FFFFFF','#FF5C8A','#46E0A0','#6FB1FF','#B48CFF'];
-  const rockets=EXP.map((x,i)=>({x:W*(.15+.7*((i*.37+.1)%1)),ty:H*(.12+.3*((i*.53)%1)),t0:x-.7,t1:x,col:pal[i%pal.length],gone:false}));
-  rockets.unshift({x:W*.5,ty:H*.22,t0:-.1,t1:.6,col:'#FFD23F',gone:false});
-  const parts=[],t0=performance.now();let last=t0;
-  function boom(r){
-    const n=W<500?70:110,col=r.col,two=Math.random()<.5?pal[(Math.random()*pal.length)|0]:null;
-    for(let i=0;i<n;i++){const a=Math.PI*2*i/n+Math.random()*.1,sp=(1.5+Math.random()*3.8)*(W<500?.75:1);
-      parts.push({x:r.x,y:r.ty,vx:Math.cos(a)*sp,vy:Math.sin(a)*sp,life:1,dec:.008+Math.random()*.008,col:two&&i%2?two:col,r:1.6+Math.random()*1.4});}
-  }
-  function frame(now){
-    const t=(now-t0)/1000,dt=Math.min(2,(now-last)/16.67);last=now;
-    g.globalCompositeOperation='destination-out';g.fillStyle='rgba(0,0,0,.2)';g.fillRect(0,0,W,H);
-    g.globalCompositeOperation='lighter';
-    rockets.forEach(r=>{
-      if(r.gone||t<r.t0)return;
-      if(t>=r.t1){r.gone=true;boom(r);return;}
-      const k=(t-r.t0)/(r.t1-r.t0),e=1-(1-k)*(1-k),y=H-(H-r.ty)*e;
-      g.fillStyle='#fff';g.beginPath();g.arc(r.x,y,2.4,0,6.3);g.fill();
-    });
-    for(let i=parts.length-1;i>=0;i--){
-      const q=parts[i];q.vx*=Math.pow(.985,dt);q.vy=q.vy*Math.pow(.985,dt)+.045*dt;q.x+=q.vx*dt;q.y+=q.vy*dt;q.life-=q.dec*dt;
-      if(q.life<=0){parts.splice(i,1);continue;}
-      g.globalAlpha=Math.max(0,q.life);g.fillStyle=q.col;g.beginPath();g.arc(q.x,q.y,q.r,0,6.3);g.fill();
-    }
-    g.globalAlpha=1;
-    if(t>4.2&&!parts.length&&rockets.every(r=>r.gone)){end();return;}
-    if(t>7){end();return;}
-    raf=requestAnimationFrame(frame);
-  }
-  raf=requestAnimationFrame(frame);
+  let timer=0,done=false;
+  const end=()=>{if(done)return;done=true;clearTimeout(timer);$fx.classList.remove('on');$fx.innerHTML='';fxStop=null;};
+  fxStop=end;$fx.onclick=end;timer=setTimeout(end,4600);
 }
 /* ---------- landing music: original stadium-style tune, made in the browser ---------- */
-let MU=null;
-function musicStop(){if(!MU)return;clearInterval(MU.tm);try{MU.m.gain.setTargetAtTime(0,AC.currentTime,.15);}catch(e){}const x=MU;MU=null;setTimeout(()=>{try{x.m.disconnect();}catch(e){}},600);}
-function musicStart(){
-  if(MU||S.screen!=='login'||!S.music)return;
-  try{AC=AC||new (window.AudioContext||window.webkitAudioContext)();if(AC.state==='suspended')AC.resume();}catch(e){return;}
-  const c=AC,m=c.createGain(),lp=c.createBiquadFilter();lp.type='lowpass';lp.frequency.value=3500;m.gain.value=0;m.gain.setTargetAtTime(.5,c.currentTime,.4);m.connect(lp);lp.connect(c.destination);
-  const step=60/132/4,A=220,sc=[0,3,5,7,10,12,15,17],fq=k=>A*Math.pow(2,k/12);
-  const lead=[[7,0],[7,1],[0,1],[5,1],[7,0],[7,1],[0,1],[0,0],[5,1],[4,1],[0,1],[3,1],[5,0],[5,1],[0,1],[0,0]];
-  const bass=[0,0,0,0,0,0,3,0,5,5,5,5,3,3,0,0];
-  let n=0,next=c.currentTime+.1;
-  function tone(t,f,d,type,v,dest){const o=c.createOscillator(),g=c.createGain();o.type=type;o.frequency.value=f;g.gain.setValueAtTime(.001,t);g.gain.linearRampToValueAtTime(v,t+.01);g.gain.exponentialRampToValueAtTime(.001,t+d);o.connect(g);g.connect(dest||m);o.start(t);o.stop(t+d+.02);}
-  function horn(t,d,v){
-    [233,234.6].forEach(fr=>{const o=c.createOscillator(),f=c.createBiquadFilter(),g=c.createGain(),l=c.createOscillator(),lg=c.createGain();
-      o.type='sawtooth';o.frequency.value=fr;l.frequency.value=5;lg.gain.value=2.5;l.connect(lg);lg.connect(o.frequency);
-      f.type='bandpass';f.frequency.value=700;f.Q.value=1.4;
-      g.gain.setValueAtTime(.001,t);g.gain.linearRampToValueAtTime(v,t+.05);g.gain.setValueAtTime(v,t+d-.08);g.gain.linearRampToValueAtTime(.001,t+d);
-      o.connect(f);f.connect(g);g.connect(m);o.start(t);l.start(t);o.stop(t+d+.02);l.stop(t+d+.02);});
-  }
-  const hornAt={0:2,3:1,4:3,8:2,11:1,12:3};
-  function hit(t,hp,d,v){const s=c.createBufferSource();s.buffer=noiseB(c,d);const f=c.createBiquadFilter();f.type='highpass';f.frequency.value=hp;const g=c.createGain();g.gain.setValueAtTime(v,t);g.gain.exponentialRampToValueAtTime(.001,t+d);s.connect(f);f.connect(g);g.connect(m);s.start(t);}
-  function sched(){
-    while(next<c.currentTime+.4){
-      const i=n%16,t=next;
-      if(i%4===0){const o=c.createOscillator(),g=c.createGain();o.frequency.setValueAtTime(130,t);o.frequency.exponentialRampToValueAtTime(45,t+.15);g.gain.setValueAtTime(.9,t);g.gain.exponentialRampToValueAtTime(.001,t+.2);o.connect(g);g.connect(m);o.start(t);o.stop(t+.22);}
-      if(i===4||i===12)hit(t,1200,.12,.35);
-      if(i%2===0)hit(t,6000,.04,.12);
-      tone(t,fq(bass[i]-12),step*1.8,'sawtooth',.16);
-      const L=lead[i];if(L[1])tone(t,fq(L[0]),step*1.6,'square',.07);
-      if(hornAt[i])horn(t,step*hornAt[i]*.92,.22);
-      if(i===0&&n%32===0)tone(t,fq(24),.5,'triangle',.05);
-      n++;next+=step;
-    }
-  }
-  MU={m,tm:setInterval(sched,100)};sched();
-}
+let MU=null;const AUD=new Audio('music/login.mp3');AUD.loop=true;AUD.volume=.7;
+function musicStop(){if(!MU)return;MU=null;try{AUD.pause();}catch(e){}}
+function musicStart(){if(MU)return;MU={};try{const p=AUD.play();if(p&&p.catch)p.catch(()=>{MU=null;});}catch(e){MU=null;}}
 document.addEventListener('pointerdown',e=>{if(S.screen==='login'&&S.music&&!MU&&!e.target.closest('[data-act=mus]'))musicStart();});
 document.addEventListener('keydown',e=>{if(S.screen==='login'&&S.music&&!MU)musicStart();},{once:false});
 /* ---------- events ---------- */
@@ -825,8 +788,15 @@ document.addEventListener('click',e=>{
   else if(a==='login'){musicStop();S.me=S.loginTeam;loadS(S.me);S.sale.t=S.me==='MI'?'CSK':'MI';S.screen='app';S.tab='setup';}
   else if(a==='logout'){S.screen='login';setTimeout(()=>{if(S.music)musicStart();},50);S.sheet=null;S.chatOpen=false;}
   else if(a==='tab'){S.tab=b.dataset.t;S.saleMsg='';window.scrollTo(0,0);}
-  else if(a==='type')S.type=b.dataset.t;
-  else if(a==='done'){S.tab='bid';window.scrollTo(0,0);}
+  else if(a==='type'){S.type=b.dataset.t;S.doneErr='';}
+  else if(a==='done'){
+    const pt=S.pct.reduce((x,y)=>x+y,0),wt2=S.want.reduce((x,y)=>x+y,0);
+    if(pt!==100)S.doneErr='Spend split must add up to 100%. It is '+pt+'% now.';
+    else if(wt2>S.rules.squad)S.doneErr='Target roles add up to '+wt2+'. Your squad size is '+S.rules.squad+'.';
+    else if(S.extraRet.length>maxRet())S.doneErr='Too many retained players for a '+S.type+' auction.';
+    else if(S.budget<=0)S.doneErr='Your budget is zero or less. Check retained players and purse.';
+    else{S.doneErr='';S.tab='bid';window.scrollTo(0,0);}
+  }
   else if(a==='pick')setPid(+b.dataset.i);
   else if(a==='pickclose'){setPid(+b.dataset.i);S.sheet=null;S.tab='bid';window.scrollTo(0,0);}
   else if(a==='pick-bid'){setPid(+b.dataset.i);S.tab='bid';window.scrollTo(0,0);}
@@ -840,19 +810,31 @@ document.addEventListener('click',e=>{
   else if(a==='delret'){{const r=S.extraRet.splice(+b.dataset.x,1)[0];if(r)S.budget=Math.round((S.budget+r.price)*100)/100;}}
   else if(a==='save'){
     const price=parseFloat(S.sale.price);if(isNaN(price)){render();return;}
-    const p=P[S.pid],buyer=S.sale.t;S.sales.push([p.i,buyer,price]);
+    const p=P[S.pid],buyer=S.sale.t,bt=teams().find(x=>x.id===buyer);
+    if(price<=0){toast('Type a price above 0.');render();return;}
+    if(bt.spots<=0){toast(buyer+' squad is full. Sale not saved.');render();return;}
+    if(p.os&&bt.os<=0){toast(buyer+' has no overseas spot left. Sale not saved.');render();return;}
+    if(price>bt.money){toast(buyer+' has only '+fmt(bt.money)+' left. Sale not saved.');render();return;}
+    S.sales.push([p.i,buyer,price]);
     const msg=`${p.name} to ${buyer} for ${fmt(price)}. Advice updated.`;
-    step(1);S.sheet=null;toast(msg);if(buyer===S.me)celebrate(p,buyer,price);
+    step(1);S.sheet=null;toast(msg);celebrate(p,buyer,price);
   }
   else if(a==='undo'){const s=S.sales.pop();if(s){setPid(s[0]);S.sale.t=s[1];S.sheet=null;toast(`Undone: ${P[s[0]].name} is back on the list.`);}}
   else if(a==='addret'){
-    const n=document.getElementById('rn').value.trim(),ps=document.getElementById('rp').value.trim(),pr=parseFloat(ps),
-      role=document.getElementById('rr').value,nt=document.getElementById('rt').value;
+    let n=document.getElementById('rn').value.trim();const ps=document.getElementById('rp').value.trim(),pr=parseFloat(ps);
+    let role=document.getElementById('rr').value,nt=document.getElementById('rt').value;
+    const me0=teams().find(t=>t.id===S.me),pi=P.findIndex(x=>x.name.toLowerCase()===n.toLowerCase());
+    if(pi>=0){n=P[pi].name;role=P[pi].role;nt=nat(P[pi]);}
     S.rf={n,p:ps,r:role,t:nt};
     if(!n)S.retErr='Type the player name.';
     else if(isNaN(pr)||pr<=0)S.retErr='Type the price in crore, like 4.5.';
-    else if(teams().find(t=>t.id===S.me).spots<=0)S.retErr='Your squad is full. No spot left.';
-    else{S.extraRet.push({name:n,role,nat:nt,price:pr});S.budget=Math.round((S.budget-pr)*100)/100;S.retErr='';S.rf={n:'',p:'',r:ROLES[0],t:'Indian'};toast(`${n} added as retained.`);}
+    else if(S.extraRet.length>=maxRet())S.retErr=S.type==='Mega'?'Mega auction: you can retain at most 6 players.':'Retention limit reached.';
+    else if(S.extraRet.some(r=>r.name.toLowerCase()===n.toLowerCase()))S.retErr=n+' is already in your retained list.';
+    else if(pi>=0&&!isUnsold(pi))S.retErr=n+' is already sold or retained.';
+    else if(me0.spots<=0)S.retErr='Your squad is full. No spot left.';
+    else if(nt==='Overseas'&&me0.os<=0)S.retErr='Your overseas spots are full.';
+    else if(pr>S.budget)S.retErr='Not enough budget. You have '+fmt(S.budget)+' left.';
+    else{S.extraRet.push({name:n,role,nat:nt,price:pr,pi:pi>=0?pi:undefined});S.budget=Math.round((S.budget-pr)*100)/100;S.retErr='';S.doneErr='';S.rf={n:'',p:'',r:ROLES[0],t:'Indian'};toast(n+' added as retained.');if(pi>=0&&S.pid===pi){const l=unsoldList();if(l.length)setPid(l[0].i);}}
   }
   else if(a==='ask'){ask(b.dataset.q);return;}
   else if(a==='send'){ask(document.getElementById('cq').value);return;}
@@ -879,8 +861,8 @@ document.addEventListener('change',e=>{
   else if(k==='rSquad'){const n=parseInt(v,10);if(!isNaN(n))S.rules.squad=Math.min(25,Math.max(18,n));}
   else if(k==='rOs'){const n=parseInt(v,10);if(!isNaN(n))S.rules.os=Math.max(0,n);}
   else if(k==='rLow'){const n=parseFloat(v);if(!isNaN(n))S.rules.low=n;}
-  else if(/^want\d$/.test(k)){const n=parseInt(v,10);if(!isNaN(n))S.want[+k[4]]=Math.max(0,n);}
-  else if(/^pct\d$/.test(k)){const n=parseInt(v,10);if(!isNaN(n))S.pct[+k[3]]=Math.max(0,n);}
+  else if(/^want\d$/.test(k)){let n=parseInt(v,10);if(!isNaN(n)){const j=+k[4],others=S.want.reduce((x,y,q)=>q===j?x:x+y,0),room=Math.max(0,S.rules.squad-others);n=Math.max(0,n);if(n>room){n=room;toast('Squad size is '+S.rules.squad+'. Highest you can set here is '+room+'.');}S.want[j]=n;}S.doneErr='';}
+  else if(/^pct\d$/.test(k)){const n=parseInt(v,10);if(!isNaN(n))S.pct[+k[3]]=Math.min(100,Math.max(0,n));S.doneErr='';}
   else if(k==='cA'||k==='cB')S[k]=+v;
   else S[k]=v;
   render();
