@@ -1,0 +1,624 @@
+name,role,nationality,age_now,team_now,score,fair_cr,base_cr,base_assumed,stats,has_stats,last_auction_year,exp_balls
+Jos Buttler,Wicketkeeper,Overseas,,GT,100.0,17.85,2.0,False,"SR 151, avg 40",True,2025.0,3103.0
+Ishan Kishan,Wicketkeeper,Indian,,SRH,100.0,16.31,2.0,False,"SR 148, avg 32",True,2025.0,2509.0
+Dhruv Jurel,Wicketkeeper,Indian,26,RR,99.0,15.49,0.2,False,"SR 155, avg 33",True,2025.0,775.0
+Heinrich Klaasen,Wicketkeeper,Overseas,,SRH,99.0,15.17,1.0,False,"SR 166, avg 43",True,2025.0,1262.0
+Prabhsimran Singh,Wicketkeeper,Indian,,PBKS,99.0,14.64,0.3,True,"SR 160, avg 32",True,2025.0,1189.0
+Cameron Green,All-rounder,Overseas,,KKR,98.0,13.95,2.0,False,"SR 150, avg 37 | econ 9.7, 23 wkts",True,2024.0,1252.0
+Vaibhav Suryavanshi,Batter,,,RR,98.0,13.82,0.3,False,"SR 231, avg 45",True,2025.0,449.0
+Sanju Samson,Wicketkeeper,,,CSK,98.0,13.8,0.3,True,"SR 143, avg 33",True,2025.0,3671.0
+Jofra Archer,All-rounder,Overseas,,RR,97.0,13.76,2.0,False,"SR 142, avg 12 | econ 8.5, 84 wkts",True,2025.0,1803.0
+Yashasvi Jaiswal,All-rounder,,,RR,97.0,13.23,0.3,True,"SR 153, avg 34",True,2025.0,1698.0
+Shreyas Iyer,Batter,Indian,,PBKS,97.0,13.15,2.0,False,"SR 141, avg 38",True,2025.0,3099.0
+Rajat Patidar,Batter,Indian,33,RCB,96.0,12.81,0.2,False,"SR 168, avg 34",True,2025.0,980.0
+Ryan Rickelton,Batter,Overseas,,MI,96.0,12.4,1.0,False,"SR 171, avg 36",True,2025.0,497.0
+Sunil Narine,Spin bowler,Overseas,,KKR,96.0,12.23,0.3,True,"SR 165, avg 18 | econ 6.8, 207 wkts",True,2025.0,5752.0
+Travis Head,Batter,Overseas,,SRH,95.0,11.58,2.0,False,"SR 169, avg 31 | econ 10.9, 3 wkts",True,2025.0,979.0
+Rasikh Salam,Fast bowler,,,RCB,95.0,11.54,0.3,False,"econ 9.9, 29 wkts",True,2025.0,530.0
+Tilak Varma,All-rounder,,,MI,95.0,11.47,0.3,True,"SR 144, avg 34",True,2025.0,1306.0
+Priyansh Arya,All-rounder,,,PBKS,94.0,11.42,0.3,False,"SR 195, avg 29",True,2025.0,471.0
+Rashid Khan,Spin bowler,Overseas,,GT,94.0,11.16,0.3,True,"SR 153, avg 13 | econ 7.5, 179 wkts",True,2025.0,3936.0
+Axar Patel,All-rounder,,,DC,94.0,11.05,0.3,True,"SR 135, avg 22 | econ 7.5, 139 wkts",True,2025.0,5141.0
+Angkrish Raghuvanshi,Batter,,,KKR,94.0,11.0,0.3,False,"SR 145, avg 36",True,2025.0,608.0
+KL Rahul,Batter,,,DC,93.0,10.97,2.0,False,"SR 142, avg 46",True,2025.0,4179.0
+Sai Sudharsan,All-rounder,,,GT,93.0,10.69,0.3,True,"SR 152, avg 48",True,2025.0,1686.0
+Mitchell Starc,Fast bowler,Overseas,,DC,93.0,10.01,2.0,False,"SR 89, avg 8 | econ 9.1, 76 wkts",True,2025.0,1312.0
+Mitchell Marsh,All-rounder,Overseas,,LSG,92.0,9.97,2.0,False,"SR 153, avg 34 | econ 8.5, 37 wkts",True,2025.0,1809.0
+Nitish Kumar Reddy,Wicketkeeper,,,SRH,92.0,9.84,0.2,False,"SR 149, avg 29 | econ 10.5, 13 wkts",True,2025.0,866.0
+Rishabh Pant,Wicketkeeper,,,LSG,92.0,9.11,2.0,False,"SR 146, avg 33",True,2025.0,2633.0
+Abhishek Sharma,All-rounder,Indian,,SRH,91.0,9.08,0.3,True,"SR 178, avg 31 | econ 9.2, 11 wkts",True,2025.0,1754.0
+Eshan Malinga,Fast bowler,Overseas,,SRH,91.0,9.03,0.3,False,"econ 9.2, 33 wkts",True,2025.0,503.0
+Shubman Gill,Batter,,,GT,91.0,9.0,0.3,True,"SR 145, avg 41",True,2025.0,3236.0
+Ruturaj Gaikwad,Batter,,,CSK,90.0,8.93,0.3,True,"SR 135, avg 37",True,2025.0,2093.0
+Josh Hazlewood,Fast bowler,Overseas,,RCB,90.0,8.64,2.0,False,"econ 8.8, 72 wkts",True,2025.0,1206.0
+Krunal Pandya,All-rounder,Indian,,RCB,90.0,8.58,2.0,False,"SR 135, avg 24 | econ 7.7, 107 wkts",True,2025.0,4182.0
+Tristan Stubbs,Wicketkeeper,Overseas,,DC,89.0,8.36,0.5,False,"SR 146, avg 39",True,2025.0,684.0
+David Miller,Batter,Overseas,,DC,89.0,8.17,1.5,False,"SR 140, avg 36",True,2025.0,2357.0
+Hardik Pandya,All-rounder,,,MI,89.0,7.83,0.3,True,"SR 146, avg 27 | econ 9.5, 82 wkts",True,2025.0,3784.0
+Josh Inglis,Wicketkeeper,Overseas,32,LSG,89.0,7.83,2.0,False,"SR 175, avg 40",True,2025.0,314.0
+Nicholas Pooran,Wicketkeeper,Overseas,,LSG,88.0,7.79,2.0,False,"SR 163, avg 31",True,2025.0,1540.0
+Mohammed Siraj,Fast bowler,,,GT,88.0,7.67,2.0,False,"SR 79, avg 9 | econ 8.8, 128 wkts",True,2025.0,2811.0
+Jason Holder,All-rounder,Overseas,,GT,87.0,7.59,2.0,False,"SR 123, avg 13 | econ 8.4, 70 wkts",True,2025.0,1488.0
+Andre Russell,All-rounder,Overseas,,KKR,87.0,7.56,0.3,True,"SR 174, avg 28 | econ 9.6, 123 wkts",True,2025.0,3328.0
+Devdutt Padikkal,Batter,Indian,,RCB,87.0,7.52,2.0,False,"SR 139, avg 28",True,2025.0,1705.0
+Phil Salt,Wicketkeeper,Overseas,,RCB,86.0,7.43,2.0,False,"SR 174, avg 34",True,2025.0,721.0
+Lungi Ngidi,Fast bowler,Overseas,,DC,86.0,7.14,1.0,False,"econ 8.4, 42 wkts",True,2025.0,629.0
+Riyan Parag,All-rounder,Indian,,RR,86.0,6.87,0.3,True,"SR 147, avg 26 | econ 9.5, 9 wkts",True,2025.0,1619.0
+Sameer Rizvi,All-rounder,,,DC,85.0,6.83,0.3,False,"SR 146, avg 33",True,2025.0,293.0
+Prince Yadav,Fast bowler,,,LSG,85.0,6.8,0.3,False,"econ 9.1, 19 wkts",True,2025.0,460.0
+Anshul Kamboj,All-rounder,,,CSK,85.0,6.75,0.3,False,"econ 10.0, 31 wkts",True,2025.0,543.0
+Suryakumar Yadav,Batter,,,MI,84.0,6.68,0.3,True,"SR 150, avg 34",True,2025.0,3089.0
+Arshdeep Singh,Fast bowler,,,PBKS,84.0,6.65,2.0,False,"econ 9.3, 111 wkts",True,2025.0,2079.0
+Virat Kohli,Batter,,,RCB,84.0,6.43,0.3,True,"SR 137, avg 42 | econ 8.8, 4 wkts",True,2025.0,7177.0
+Rinku Singh,Batter,Indian,,KKR,83.0,6.4,0.3,True,"SR 147, avg 36",True,2025.0,955.0
+Shivam Dube,All-rounder,Indian,33,CSK,83.0,6.4,0.5,False,"SR 146, avg 32 | econ 11.3, 6 wkts",True,2025.0,1618.0
+Ashutosh Sharma,All-rounder,,,DC,83.0,6.32,0.3,False,"SR 170, avg 30",True,2025.0,334.0
+Bhuvneshwar Kumar,Fast bowler,Indian,,RCB,83.0,6.15,2.0,False,"SR 95, avg 10 | econ 7.8, 226 wkts",True,2025.0,4977.0
+Kagiso Rabada,Fast bowler,Overseas,,GT,82.0,6.14,2.0,False,"SR 112, avg 14 | econ 9.0, 148 wkts",True,2025.0,2529.0
+Tim David,All-rounder,Overseas,31,RCB,82.0,6.11,2.0,False,"SR 180, avg 34",True,2025.0,656.0
+Kartik Tyagi,Fast bowler,Indian,,KKR,82.0,6.1,0.3,False,"econ 9.9, 33 wkts",True,2025.0,754.0
+Donovan Ferreira,Wicketkeeper,Overseas,,RR,81.0,6.03,0.75,False,"SR 174, avg 30",True,2025.0,209.0
+Marcus Stoinis,All-rounder,Overseas,,PBKS,81.0,5.97,2.0,False,"SR 151, avg 29 | econ 10.1, 46 wkts",True,2025.0,2455.0
+Naman Dhir,All-rounder,,,MI,81.0,5.88,0.3,False,"SR 161, avg 27",True,2025.0,485.0
+Pat Cummins,All-rounder,Overseas,,SRH,80.0,5.87,2.0,False,"SR 154, avg 19 | econ 9.0, 87 wkts",True,2025.0,2230.0
+Will Jacks,All-rounder,Overseas,,MI,80.0,5.65,2.0,False,"SR 159, avg 27 | econ 9.8, 10 wkts",True,2025.0,570.0
+Rovman Powell,Batter,Overseas,33,KKR,80.0,5.61,1.5,False,"SR 140, avg 25",True,2025.0,408.0
+Aiden Markram,Batter,Overseas,,LSG,79.0,5.52,2.0,False,"SR 137, avg 30 | econ 10.1, 6 wkts",True,2025.0,1456.0
+Ravindra Jadeja,All-rounder,,,RR,79.0,5.47,0.3,True,"SR 131, avg 30 | econ 7.8, 180 wkts",True,2025.0,6953.0
+Nitish Rana,All-rounder,Indian,,DC,79.0,5.39,1.5,False,"SR 139, avg 27 | econ 9.5, 10 wkts",True,2025.0,2451.0
+Andrew Tye,Fast bowler,Overseas,,,78.0,5.29,0.75,False,"SR 120, avg 10 | econ 8.6, 42 wkts",True,2025.0,760.0
+Washington Sundar,All-rounder,Indian,,GT,78.0,5.28,2.0,False,"SR 141, avg 24 | econ 7.9, 40 wkts",True,2025.0,1830.0
+Venkatesh Iyer,All-rounder,Indian,32,RCB,78.0,5.21,2.0,False,"SR 146, avg 32 | econ 10.6, 3 wkts",True,2025.0,1262.0
+Yuzvendra Chahal,Spin bowler,Indian,,PBKS,77.0,5.17,2.0,False,"SR 43, avg 5 | econ 8.2, 233 wkts",True,2025.0,4123.0
+Vaibhav Arora,Fast bowler,Indian,29,KKR,77.0,5.1,0.3,False,"econ 9.9, 47 wkts",True,2025.0,893.0
+Sam Curran,All-rounder,Overseas,,CSK,77.0,5.03,2.0,False,"SR 136, avg 25 | econ 9.8, 59 wkts",True,2025.0,1984.0
+Jamie Overton,All-rounder,Overseas,,CSK,76.0,4.86,1.5,False,"SR 161, avg 29 | econ 9.6, 14 wkts",True,2025.0,297.0
+Rilee Rossouw,Batter,Overseas,,PBKS,76.0,4.78,2.0,False,"SR 154, avg 24",True,2025.0,308.0
+Mohsin Khan,Fast bowler,Indian,,LSG,76.0,4.74,0.3,True,"econ 8.4, 38 wkts",True,2025.0,682.0
+Sakib Hussain,Fast bowler,,,SRH,75.0,4.71,0.3,False,"econ 9.5, 15 wkts",True,2025.0,259.0
+Romario Shepherd,All-rounder,Overseas,32,RCB,75.0,4.56,1.5,False,"SR 167, avg 24 | econ 11.7, 17 wkts",True,2025.0,513.0
+AM Ghazanfar,Spin bowler,Overseas,,MI,75.0,4.53,0.75,False,"econ 10.0, 15 wkts",True,2025.0,236.0
+Quinton de Kock,Wicketkeeper,Overseas,,MI,74.0,4.38,2.0,False,"SR 136, avg 32",True,2025.0,2550.0
+Dewald Brevis,Batter,Overseas,,CSK,74.0,4.35,0.75,False,"SR 146, avg 25",True,2025.0,418.0
+Glenn Maxwell,All-rounder,Overseas,38,PBKS,74.0,4.3,2.0,False,"SR 154, avg 23 | econ 8.3, 41 wkts",True,2025.0,2839.0
+Mohammed Shami,Fast bowler,,,LSG,73.0,4.23,2.0,False,"SR 109, avg 6 | econ 8.8, 145 wkts",True,2025.0,3023.0
+Abdul Samad,All-rounder,,,LSG,73.0,4.16,0.3,False,"SR 148, avg 20",True,2025.0,633.0
+Shimron Hetmyer,Batter,Overseas,,RR,73.0,4.1,0.3,True,"SR 147, avg 26",True,2025.0,1045.0
+Bhanuka Rajapaksa,Batter,Overseas,,PBKS,73.0,4.1,0.75,False,"SR 145, avg 23",True,2025.0,191.0
+Sherfane Rutherford,All-rounder,Overseas,28,MI,72.0,4.07,1.5,False,"SR 148, avg 26",True,2025.0,405.0
+Rahul Tewatia,All-rounder,Indian,,GT,72.0,4.01,0.3,True,"SR 140, avg 23 | econ 7.9, 32 wkts",True,2025.0,1786.0
+Jake Fraser-McGurk,All-rounder,Overseas,,DC,72.0,3.99,2.0,False,"SR 188, avg 23",True,2025.0,193.0
+Wayne Parnell,All-rounder,Overseas,37,,71.0,3.9,1.0,False,"SR 81, avg 6 | econ 7.8, 35 wkts",True,2025.0,803.0
+Ayush Badoni,All-rounder,Indian,27,LSG,71.0,3.83,0.2,False,"SR 143, avg 26",True,2025.0,877.0
+Jonny Bairstow,Wicketkeeper,Overseas,,MI,71.0,3.73,2.0,False,"SR 147, avg 35",True,2025.0,1146.0
+Prasidh Krishna,Fast bowler,Indian,,GT,70.0,3.7,2.0,False,"econ 9.1, 90 wkts",True,2025.0,1764.0
+Jitesh Sharma,Wicketkeeper,Indian,,RCB,70.0,3.68,1.0,False,"SR 151, avg 22",True,2025.0,726.0
+Liam Livingstone,All-rounder,Overseas,33,SRH,70.0,3.66,2.0,False,"SR 151, avg 24 | econ 9.0, 13 wkts",True,2025.0,999.0
+Wanindu Hasaranga,All-rounder,Overseas,29,RR,69.0,3.64,2.0,False,"SR 90, avg 5 | econ 8.5, 46 wkts",True,2025.0,886.0
+Mohd. Arshad Khan,All-rounder,Indian,,GT,69.0,3.63,0.2,False,"SR 153, avg 22 | econ 10.7, 18 wkts",True,2024.0,459.0
+Azmatullah Omarzai,All-rounder,Overseas,,PBKS,68.0,3.6,1.5,False,"SR 156, avg 17 | econ 9.7, 15 wkts",True,2025.0,455.0
+Shardul Thakur,All-rounder,Indian,,MI,68.0,3.6,2.0,False,"SR 128, avg 11 | econ 9.8, 119 wkts",True,2025.0,2465.0
+Maheesh Theekshana,Spin bowler,Overseas,26,RR,68.0,3.52,2.0,False,"econ 8.5, 36 wkts",True,2025.0,910.0
+Shivam Mavi,All-rounder,Indian,,LSG,68.0,3.52,0.75,False,"econ 8.7, 30 wkts",True,2025.0,705.0
+Kyle Mayers,All-rounder,Overseas,34,LSG,67.0,3.5,1.5,False,"SR 144, avg 29",True,2025.0,305.0
+Noor Ahmad,Spin bowler,Overseas,,CSK,67.0,3.45,2.0,False,"econ 8.2, 61 wkts",True,2025.0,1156.0
+Marco Jansen,All-rounder,Overseas,26,PBKS,67.0,3.42,1.25,False,"SR 112, avg 13 | econ 9.7, 45 wkts",True,2025.0,1191.0
+Evin Lewis,Batter,Overseas,35,LSG,66.0,3.39,2.0,False,"SR 137, avg 27",True,2025.0,477.0
+Shashank Singh,All-rounder,Indian,35,PBKS,66.0,3.35,0.2,False,"SR 163, avg 35 | econ 9.3, 5 wkts",True,2025.0,650.0
+Anrich Nortje,Fast bowler,Overseas,,LSG,66.0,3.26,2.0,False,"econ 9.1, 61 wkts",True,2025.0,1170.0
+Mohammad Nabi,All-rounder,Overseas,,MI,66.0,3.26,1.5,False,"SR 143, avg 13 | econ 7.4, 15 wkts",True,2025.0,567.0
+Rahmanullah Gurbaz,Wicketkeeper,Overseas,25,KKR,65.0,3.24,2.0,False,"SR 135, avg 21",True,2025.0,269.0
+Sam Billings,Wicketkeeper,Overseas,35,KKR,65.0,3.19,1.5,False,"SR 130, avg 19",True,2025.0,388.0
+Ajinkya Rahane,Batter,Indian,,KKR,64.0,3.16,1.5,False,"SR 127, avg 30",True,2025.0,4279.0
+Shai Hope,Wicketkeeper,Overseas,,DC,64.0,3.12,1.25,False,"SR 150, avg 23",True,2025.0,122.0
+Naveen-ul-Haq,Fast bowler,Overseas,27,LSG,64.0,3.11,2.0,False,"econ 9.2, 25 wkts",True,2025.0,412.0
+Moeen Ali,All-rounder,Overseas,39,KKR,63.0,3.1,2.0,False,"SR 139, avg 22 | econ 7.3, 41 wkts",True,2025.0,1689.0
+Vipraj Nigam,All-rounder,,,DC,63.0,3.02,0.3,False,"SR 175, avg 19 | econ 9.9, 13 wkts",True,2025.0,377.0
+David Warner,Batter,Overseas,,DC,63.0,2.97,2.0,False,"SR 140, avg 41",True,2025.0,4698.0
+Devon Conway,Batter,Overseas,35,CSK,62.0,2.96,2.0,False,"SR 139, avg 41",True,2025.0,773.0
+Nathan Ellis,Fast bowler,Overseas,32,CSK,62.0,2.94,1.25,False,"econ 8.7, 19 wkts",True,2025.0,403.0
+Ramandeep Singh,All-rounder,Indian,,KKR,62.0,2.93,0.2,False,"SR 139, avg 17",True,2025.0,261.0
+Shakib Al Hasan,All-rounder,Overseas,40,KKR,61.0,2.92,1.0,False,"SR 124, avg 20 | econ 7.4, 63 wkts",True,2025.0,2121.0
+M Shahrukh Khan,All-rounder,,,GT,61.0,2.92,0.3,True,"SR 150, avg 20",True,2025.0,542.0
+Nehal Wadhera,All-rounder,,,PBKS,61.0,2.92,0.3,False,"SR 139, avg 23",True,2025.0,577.0
+Varun Chakravarthy,All-rounder,,,KKR,61.0,2.89,0.3,True,"econ 7.8, 111 wkts",True,2025.0,2187.0
+Mukesh Kumar,Fast bowler,,,DC,60.0,2.88,2.0,False,"econ 10.7, 42 wkts",True,2025.0,842.0
+Dushmantha Chameera,Fast bowler,Overseas,,DC,60.0,2.85,0.75,False,"econ 10.0, 13 wkts",True,2025.0,441.0
+Nandre Burger,Fast bowler,Overseas,,RR,60.0,2.85,1.25,False,"econ 9.9, 21 wkts",True,2025.0,372.0
+Urvil Patel,Wicketkeeper,,,CSK,59.0,2.8,0.3,False,"SR 205, avg 19",True,2025.0,96.0
+Aniket Verma,Batter,,,SRH,59.0,2.8,0.3,False,"SR 160, avg 20",True,2025.0,196.0
+Rachin Ravindra,All-rounder,Overseas,,CSK,59.0,2.78,1.5,False,"SR 141, avg 25",True,2025.0,299.0
+Dasun Shanaka,All-rounder,Overseas,35,RR,58.0,2.76,0.75,False,"SR 129, avg 13",True,2025.0,108.0
+Jasprit Bumrah,Fast bowler,,,MI,58.0,2.74,0.3,True,"SR 88, avg 9 | econ 7.4, 187 wkts",True,2025.0,3717.0
+Rohit Sharma,Batter,Indian,33,MI,58.0,2.73,0.2,False,"SR 134, avg 30 | econ 8.0, 15 wkts",True,2025.0,5853.0
+Harry Brook,Batter,Overseas,,DC,57.0,2.7,2.0,False,"SR 123, avg 21",True,2025.0,154.0
+Riley Meredith,Fast bowler,Overseas,30,MI,57.0,2.69,1.5,False,"econ 9.5, 19 wkts",True,2025.0,391.0
+Deepak Chahar,Fast bowler,Indian,,MI,57.0,2.66,2.0,False,"SR 138, avg 15 | econ 8.5, 96 wkts",True,2025.0,2171.0
+Suryansh Shedge,All-rounder,,,PBKS,56.0,2.62,0.3,False,"SR 166, avg 26",True,2025.0,119.0
+Gerald Coetzee,All-rounder,Overseas,26,GT,56.0,2.62,1.25,False,"econ 10.4, 15 wkts",True,2025.0,306.0
+Shubham Dubey,Batter,,,RR,56.0,2.59,0.3,False,"SR 151, avg 22",True,2025.0,143.0
+Abishek Porel,Wicketkeeper,,,DC,55.0,2.53,0.2,False,"SR 143, avg 26",True,2025.0,529.0
+Trent Boult,Fast bowler,Overseas,,MI,55.0,2.52,2.0,False,"SR 113, avg 9 | econ 8.6, 145 wkts",True,2025.0,2865.0
+Nuwan Thushara,Fast bowler,Overseas,,RCB,55.0,2.44,0.75,False,"econ 9.2, 9 wkts",True,2025.0,180.0
+Tim Southee,Fast bowler,Overseas,38,KKR,54.0,2.42,1.5,False,"SR 112, avg 9 | econ 8.7, 47 wkts",True,2025.0,1313.0
+Mustafizur Rahman,Fast bowler,Overseas,31,DC,54.0,2.39,2.0,False,"econ 8.1, 65 wkts",True,2025.0,1388.0
+Kane Williamson,Batter,Overseas,,GT,54.0,2.37,2.0,False,"SR 126, avg 35",True,2025.0,1712.0
+Alzarri Joseph,Spin bowler,Overseas,30,RCB,54.0,2.37,2.0,False,"econ 9.6, 21 wkts",True,2025.0,466.0
+Spencer Johnson,Fast bowler,Overseas,,CSK,53.0,2.35,2.0,False,"econ 10.4, 7 wkts",True,2025.0,242.0
+Adam Zampa,Spin bowler,Overseas,,SRH,53.0,2.32,2.0,False,"econ 8.5, 31 wkts",True,2025.0,491.0
+Daryl Mitchell,All-rounder,Overseas,35,CSK,53.0,2.32,2.0,False,"SR 131, avg 27",True,2025.0,315.0
+Harshit Rana,Fast bowler,,,KKR,52.0,2.27,0.3,True,"econ 9.6, 40 wkts",True,2025.0,705.0
+Mujeeb Ur Rahman,Spin bowler,Overseas,26,MI,52.0,2.24,2.0,False,"econ 8.4, 20 wkts",True,2025.0,461.0
+Matheesha Pathirana,Spin bowler,Overseas,,KKR,51.0,2.23,0.3,True,"econ 8.9, 47 wkts",True,2025.0,710.0
+Fazalhaq Farooqi,Fast bowler,Overseas,26,RR,51.0,2.19,2.0,False,"econ 10.7, 6 wkts",True,2025.0,269.0
+Akash Madhwal,Fast bowler,,,RR,51.0,2.15,0.3,False,"econ 10.2, 23 wkts",True,2025.0,366.0
+Himmat Singh,Batter,Indian,30,LSG,50.0,2.13,0.3,False,"SR 133, avg 31",True,2025.0,69.0
+Tymal Mills,Fast bowler,Overseas,,MI,50.0,2.12,2.0,False,"econ 9.8, 11 wkts",True,2025.0,223.0
+Ravi Bishnoi,Spin bowler,,,RR,50.0,2.11,0.3,True,"SR 64, avg 3 | econ 8.6, 83 wkts",True,2025.0,1858.0
+Faf du Plessis,Batter,Overseas,,DC,50.0,2.08,2.0,False,"SR 136, avg 35",True,2025.0,3521.0
+Shahbaz Ahmed,All-rounder,,,LSG,49.0,2.05,1.0,False,"SR 125, avg 23 | econ 10.0, 27 wkts",True,2025.0,1144.0
+Tushar Deshpande,Fast bowler,Indian,31,RR,49.0,2.04,1.0,False,"econ 10.3, 55 wkts",True,2025.0,1139.0
+Shamar Joseph,Fast bowler,Overseas,,LSG,49.0,2.04,0.75,False,No IPL stats yet,True,2025.0,24.0
+Mitchell Santner,All-rounder,Overseas,,MI,48.0,2.03,2.0,False,"SR 115, avg 20 | econ 7.7, 30 wkts",True,2025.0,810.0
+Yash Dayal,Fast bowler,Indian,,RCB,48.0,2.01,0.2,False,"econ 9.6, 41 wkts",True,2025.0,880.0
+Kwena Maphaka,Fast bowler,Overseas,,RR,48.0,2.0,0.75,False,"econ 12.6, 2 wkts",True,2025.0,68.0
+Lockie Ferguson,Fast bowler,Overseas,,PBKS,47.0,1.99,2.0,False,"econ 9.4, 52 wkts",True,2025.0,1136.0
+MS Dhoni,Wicketkeeper,,,CSK,47.0,1.98,0.3,True,"SR 137, avg 38",True,2025.0,3957.0
+Duan Jansen,All-rounder,Overseas,,MI,47.0,1.97,0.3,False,No IPL stats yet,True,2025.0,24.0
+Jacob Bethell,All-rounder,Overseas,,RCB,46.0,1.95,1.25,False,"SR 138, avg 17",True,2025.0,116.0
+Harpreet Brar,All-rounder,Indian,,PBKS,46.0,1.95,0.3,False,"SR 120, avg 21 | econ 8.0, 37 wkts",True,2025.0,1065.0
+Harshal Patel,All-rounder,Indian,,SRH,46.0,1.92,2.0,False,"SR 116, avg 8 | econ 9.0, 151 wkts",True,2025.0,2744.0
+Matthew Short,All-rounder,Overseas,,CSK,45.0,1.91,0.75,False,"SR 122, avg 20",True,2025.0,186.0
+Adam Milne,Fast bowler,Overseas,34,RR,45.0,1.89,2.0,False,"econ 9.9, 7 wkts",True,2025.0,258.0
+Tom Curran,All-rounder,Overseas,32,RCB,44.0,1.86,2.0,False,"SR 119, avg 25 | econ 10.8, 13 wkts",True,2025.0,345.0
+Kyle Jamieson,Fast bowler,Overseas,32,DC,44.0,1.86,1.5,False,"SR 101, avg 15 | econ 10.4, 16 wkts",True,2025.0,373.0
+Sikandar Raza,All-rounder,Overseas,,PBKS,44.0,1.85,1.25,False,"SR 134, avg 26 | econ 10.1, 3 wkts",True,2025.0,220.0
+Mayank Agarwal,Batter,,,RCB,44.0,1.82,1.0,False,"SR 134, avg 23",True,2024.0,2064.0
+Tom Kohler-Cadmore,Wicketkeeper,Overseas,,RR,43.0,1.8,0.5,False,No IPL stats yet,True,2025.0,54.0
+Karim Janat,All-rounder,Overseas,28,GT,43.0,1.76,0.75,False,No IPL stats yet,True,2025.0,6.0
+Gulbadin Naib,All-rounder,Overseas,,,43.0,1.76,1.0,False,No IPL stats yet,True,2025.0,21.0
+Reece Topley,Fast bowler,Overseas,33,MI,42.0,1.74,0.75,False,"econ 11.3, 5 wkts",True,2025.0,126.0
+Sean Abbott,All-rounder,Overseas,35,SRH,42.0,1.74,2.0,False,No IPL stats yet,True,2025.0,72.0
+Rassie van der Dussen,Batter,Overseas,38,RR,42.0,1.74,2.0,False,No IPL stats yet,True,2025.0,24.0
+Dwaine Pretorius,All-rounder,Overseas,38,CSK,41.0,1.73,0.75,False,"econ 9.5, 6 wkts",True,2025.0,178.0
+Obed McCoy,Spin bowler,Overseas,30,RR,41.0,1.72,1.25,False,"econ 9.3, 11 wkts",True,2025.0,166.0
+Abhinav Manohar,Batter,,,SRH,41.0,1.71,0.3,False,"SR 121, avg 15",True,2025.0,235.0
+T Natarajan,Fast bowler,Indian,,DC,40.0,1.68,2.0,False,"econ 9.4, 73 wkts",True,2025.0,1560.0
+Ashton Turner,Batter,Overseas,,LSG,40.0,1.67,1.0,False,No IPL stats yet,True,2025.0,28.0
+Jhye Richardson,Spin bowler,Overseas,30,DC,40.0,1.63,1.5,False,"econ 10.5, 3 wkts",True,2025.0,116.0
+Chris Jordan,All-rounder,Overseas,,CSK,39.0,1.61,2.0,False,"SR 105, avg 8 | econ 9.6, 30 wkts",True,2025.0,745.0
+Xavier Bartlett,Fast bowler,Overseas,,PBKS,39.0,1.6,0.75,False,"econ 11.2, 7 wkts",True,2025.0,289.0
+Vijaykumar Vyshak,Spin bowler,,,PBKS,39.0,1.6,0.3,False,"econ 10.5, 26 wkts",True,2025.0,535.0
+Chetan Sakariya,Fast bowler,Indian,29,KKR,39.0,1.58,0.75,False,"econ 8.7, 20 wkts",True,2025.0,475.0
+Matthew Breetzke,Batter,Overseas,,LSG,38.0,1.57,0.75,False,No IPL stats yet,True,2025.0,12.0
+Sediqullah Atal,Batter,Overseas,,DC,38.0,1.57,0.75,False,No IPL stats yet,True,2025.0,16.0
+Khaleel Ahmed,Fast bowler,,,CSK,38.0,1.56,2.0,False,"econ 9.0, 91 wkts",True,2025.0,1666.0
+Navdeep Saini,Fast bowler,Indian,,KKR,37.0,1.54,0.75,False,"econ 8.9, 23 wkts",True,2025.0,701.0
+Akeal Hosein,Fast bowler,Overseas,33,CSK,37.0,1.53,1.5,False,"econ 8.2, 9 wkts",True,2025.0,185.0
+Odean Smith,All-rounder,Overseas,,GT,37.0,1.52,0.75,False,"econ 11.9, 6 wkts",True,2025.0,134.0
+Glenn Phillips,Wicketkeeper,Overseas,30,GT,36.0,1.47,2.0,False,"SR 122, avg 13",True,2025.0,139.0
+Ravichandran Ashwin,All-rounder,,,CSK,36.0,1.44,2.0,False,"SR 118, avg 13 | econ 7.2, 187 wkts",True,2025.0,5415.0
+Yash Thakur,Fast bowler,,,PBKS,36.0,1.43,0.4,False,"econ 10.8, 27 wkts",True,2025.0,467.0
+Avesh Khan,Fast bowler,Indian,,LSG,35.0,1.41,2.0,False,"econ 9.5, 93 wkts",True,2025.0,1810.0
+Sai Kishore,All-rounder,,,GT,35.0,1.4,0.75,False,"econ 9.1, 33 wkts",True,2025.0,481.0
+Harsh Dubey,All-rounder,,,SRH,35.0,1.4,0.3,False,"econ 10.2, 13 wkts",True,2025.0,201.0
+James Neesham,All-rounder,Overseas,36,RR,34.0,1.33,1.5,False,"SR 99, avg 10 | econ 9.3, 8 wkts",True,2025.0,309.0
+Sarfaraz Khan,All-rounder,Indian,,CSK,34.0,1.32,0.75,False,"SR 142, avg 23",True,2025.0,545.0
+Mukesh Choudhary,Fast bowler,Indian,30,CSK,34.0,1.31,0.3,False,"econ 9.5, 25 wkts",True,2025.0,491.0
+Jaydev Unadkat,Fast bowler,Indian,,SRH,33.0,1.3,1.0,False,"SR 119, avg 13 | econ 9.0, 114 wkts",True,2025.0,2520.0
+Anukul Roy,All-rounder,Indian,,KKR,33.0,1.3,0.3,False,"SR 126, avg 10 | econ 9.1, 15 wkts",True,2025.0,387.0
+Jason Behrendorff,Fast bowler,Overseas,36,MI,33.0,1.3,1.5,False,"econ 9.0, 19 wkts",True,2025.0,375.0
+Manav Suthar,Fast bowler,,,GT,32.0,1.29,0.3,False,No IPL stats yet,True,2025.0,50.0
+Mohit Sharma,Fast bowler,Indian,38,DC,32.0,1.28,0.5,False,"SR 91, avg 7 | econ 8.8, 134 wkts",True,2025.0,2539.0
+Adil Rashid,Spin bowler,Overseas,39,SRH,32.0,1.27,2.0,False,"econ 9.1, 2 wkts",True,2025.0,76.0
+Michael Bracewell,All-rounder,Overseas,,,31.0,1.25,1.5,False,"econ 8.6, 6 wkts",True,2025.0,113.0
+Suyash Sharma,Spin bowler,,,RCB,31.0,1.23,0.3,False,"econ 8.9, 27 wkts",True,2025.0,803.0
+Deepak Hooda,All-rounder,Indian,,CSK,31.0,1.21,0.75,False,"SR 127, avg 17 | econ 8.7, 10 wkts",True,2025.0,1551.0
+Ashwani Kumar,Spin bowler,,,MI,30.0,1.2,0.3,False,"econ 10.9, 17 wkts",True,2025.0,189.0
+Karun Nair,Batter,Indian,35,DC,30.0,1.2,0.3,False,"SR 133, avg 23",True,2025.0,1304.0
+Sandeep Sharma,Fast bowler,Indian,,RR,30.0,1.16,0.5,False,"SR 81, avg 10 | econ 8.3, 151 wkts",True,2025.0,3234.0
+Vijay Shankar,All-rounder,Indian,,CSK,29.0,1.14,0.3,False,"SR 130, avg 27 | econ 8.7, 9 wkts",True,2025.0,1188.0
+Prithvi Shaw,Batter,,,DC,29.0,1.14,0.75,False,"SR 147, avg 24",True,2025.0,1283.0
+Tim Seifert,Wicketkeeper,Overseas,,KKR,29.0,1.13,1.25,False,No IPL stats yet,True,2025.0,41.0
+Mahipal Lomror,All-rounder,Indian,,GT,28.0,1.07,0.5,False,"SR 141, avg 18 | econ 8.5, 1 wkts",True,2025.0,463.0
+Daniel Sams,All-rounder,Overseas,,LSG,28.0,1.06,1.5,False,"econ 8.7, 14 wkts",True,2025.0,404.0
+Krish Bhagat,All-rounder,,,MI,28.0,1.01,0.3,False,No IPL stats yet,True,2025.0,57.0
+Umesh Yadav,Fast bowler,Indian,39,GT,27.0,0.98,2.0,False,"SR 103, avg 10 | econ 8.5, 144 wkts",True,2025.0,3251.0
+Vishnu Vinod,Wicketkeeper,Indian,33,PBKS,27.0,0.98,0.3,False,"SR 118, avg 14",True,2025.0,65.0
+Rahul Tripathi,Batter,Indian,,CSK,27.0,0.97,0.75,False,"SR 137, avg 26",True,2025.0,1668.0
+Shaik Rasheed,Batter,,,CSK,26.0,0.94,0.3,False,"SR 113, avg 14",True,2025.0,63.0
+Basil Thampi,Fast bowler,Indian,,MI,26.0,0.94,0.3,False,"econ 9.7, 22 wkts",True,2025.0,556.0
+Manimaran Siddharth,Spin bowler,,,LSG,26.0,0.93,0.3,False,"econ 9.3, 9 wkts",True,2025.0,186.0
+Ashok Sharma,Spin bowler,Indian,,GT,26.0,0.91,0.3,False,"econ 10.9, 6 wkts",True,2025.0,130.0
+Rishi Dhawan,All-rounder,Indian,37,PBKS,25.0,0.89,0.3,False,"SR 112, avg 19 | econ 8.1, 25 wkts",True,2025.0,849.0
+Kuldeep Yadav,Spin bowler,Indian,,DC,25.0,0.86,0.3,True,"SR 81, avg 10 | econ 8.4, 112 wkts",True,2025.0,2539.0
+Atharva Taide,All-rounder,Indian,,SRH,25.0,0.86,0.3,False,"SR 147, avg 25",True,2025.0,178.0
+Ishant Sharma,Fast bowler,,,GT,25.0,0.86,0.75,False,"SR 83, avg 10 | econ 8.4, 96 wkts",True,2025.0,2488.0
+Rahul Chahar,Spin bowler,Indian,,CSK,24.0,0.84,1.0,False,"SR 104, avg 8 | econ 7.8, 75 wkts",True,2025.0,1818.0
+Manan Vohra,Batter,Indian,,LSG,24.0,0.82,0.3,False,"SR 131, avg 22",True,2025.0,829.0
+Madhav Tiwari,All-rounder,,,DC,23.0,0.8,0.3,False,"econ 9.1, 4 wkts",True,2025.0,78.0
+R Smaran,Batter,,,SRH,23.0,0.79,0.3,False,No IPL stats yet,True,2025.0,25.0
+Kumar Kartikeya,Spin bowler,,,RR,23.0,0.78,0.3,False,"econ 8.7, 12 wkts",True,2025.0,299.0
+Mayank Yadav,Spin bowler,Indian,,LSG,22.0,0.77,0.3,True,"econ 10.7, 9 wkts",True,2025.0,222.0
+Manish Pandey,Batter,Indian,,KKR,22.0,0.76,0.75,False,"SR 122, avg 30",True,2025.0,3293.0
+Umran Malik,Spin bowler,Indian,27,KKR,22.0,0.72,0.75,False,"econ 9.4, 29 wkts",True,2025.0,509.0
+Kumar Kushagra,Wicketkeeper,,,GT,22.0,0.72,0.3,False,No IPL stats yet,True,2025.0,21.0
+Kuldip Yadav,Fast bowler,Indian,30,RR,21.0,0.71,0.3,False,No IPL stats yet,True,2025.0,58.0
+KM Asif,Spin bowler,,,,21.0,0.71,0.3,False,"econ 10.4, 7 wkts",True,2025.0,135.0
+Musheer Khan,All-rounder,,,PBKS,20.0,0.7,0.3,False,No IPL stats yet,True,2025.0,15.0
+Kuldeep Sen,Spin bowler,Indian,30,PBKS,20.0,0.66,0.75,False,"econ 9.6, 14 wkts",True,2025.0,244.0
+Shivam Singh,Wicketkeeper,,,PBKS,19.0,0.65,0.3,False,No IPL stats yet,True,2025.0,3.0
+Mohit Rathee,All-rounder,,,RCB,19.0,0.65,0.3,False,No IPL stats yet,True,2025.0,14.0
+Abdul Basith,All-rounder,,,,19.0,0.65,0.3,False,No IPL stats yet,True,2025.0,1.0
+Salil Arora,Batter,,,SRH,19.0,0.64,0.3,False,No IPL stats yet,True,2025.0,21.0
+Gurjapneet Singh,Spin bowler,,,CSK,18.0,0.63,0.3,False,"econ 9.3, 4 wkts",True,2025.0,151.0
+Yudhvir Singh,All-rounder,,,RR,18.0,0.63,0.3,False,"econ 11.2, 8 wkts",True,2025.0,154.0
+Priyam Garg,All-rounder,Indian,,SRH,18.0,0.62,0.3,False,"SR 113, avg 15",True,2025.0,241.0
+Arjun Tendulkar,All-rounder,Indian,27,LSG,17.0,0.61,0.3,False,"econ 9.2, 4 wkts",True,2025.0,111.0
+Lalit Yadav,All-rounder,Indian,,DC,17.0,0.6,0.3,False,"SR 105, avg 19 | econ 8.9, 10 wkts",True,2025.0,578.0
+Arshin Kulkarni,All-rounder,,,LSG,17.0,0.6,0.3,False,No IPL stats yet,True,2025.0,33.0
+Abhinandan Singh,Fast bowler,,,RCB,17.0,0.6,0.3,False,No IPL stats yet,True,2025.0,58.0
+Prerak Mankad,All-rounder,Indian,32,LSG,17.0,0.6,0.3,False,"SR 133, avg 32",True,2025.0,73.0
+Akash Deep,Fast bowler,Indian,30,LSG,16.0,0.58,1.0,False,"econ 11.9, 10 wkts",True,2025.0,292.0
+Robin Minz,Wicketkeeper,,,MI,16.0,0.58,0.3,False,No IPL stats yet,True,2025.0,19.0
+Simarjeet Singh,Fast bowler,Indian,29,SRH,15.0,0.57,0.3,False,"econ 10.5, 11 wkts",True,2025.0,255.0
+Akshat Raghuwanshi,Batter,,,LSG,15.0,0.57,0.3,False,No IPL stats yet,True,2025.0,25.0
+Mayank Dagar,All-rounder,,,RCB,14.0,0.55,0.3,False,"econ 8.9, 2 wkts",True,2025.0,138.0
+Tanush Kotian,All-rounder,,,,14.0,0.55,0.3,False,No IPL stats yet,True,2025.0,31.0
+Piyush Chawla,Spin bowler,Indian,38,MI,14.0,0.53,0.5,False,"SR 111, avg 11 | econ 8.0, 192 wkts",True,2025.0,4413.0
+Akash Singh,Fast bowler,Indian,24,LSG,14.0,0.53,0.3,False,"econ 10.0, 13 wkts",True,2025.0,247.0
+Auqib Nabi,All-rounder,,,DC,14.0,0.53,0.3,False,"econ 11.5, 0 wkts",True,2025.0,82.0
+Arshad Khan,All-rounder,,,GT,12.0,0.52,0.3,False,No IPL stats yet,True,2025.0,16.0
+Ricky Bhui,Wicketkeeper,,,DC,12.0,0.52,0.3,False,No IPL stats yet,True,2025.0,26.0
+Virat Singh,Batter,,,,12.0,0.52,0.3,False,No IPL stats yet,True,2025.0,26.0
+Sanvir Singh,All-rounder,,,SRH,12.0,0.52,0.3,False,No IPL stats yet,True,2025.0,21.0
+BR Sharath,Batter,,,,12.0,0.52,0.3,False,No IPL stats yet,True,2025.0,5.0
+Saurav Chauhan,Batter,,,,12.0,0.52,0.3,False,No IPL stats yet,True,2025.0,15.0
+Jagadeesha Suchith,All-rounder,Indian,33,SRH,11.0,0.49,0.3,False,"SR 115, avg 18 | econ 8.6, 19 wkts",True,2025.0,481.0
+KC Cariappa,All-rounder,,,,11.0,0.49,0.3,False,"econ 9.7, 8 wkts",True,2025.0,237.0
+Karn Sharma,Spin bowler,Indian,,MI,11.0,0.49,0.5,False,"SR 119, avg 14 | econ 8.4, 83 wkts",True,2025.0,1880.0
+Shams Mulani,All-rounder,Indian,30,MI,10.0,0.48,0.3,False,No IPL stats yet,True,2025.0,31.0
+Jayant Yadav,All-rounder,Indian,,GT,10.0,0.47,0.75,False,"econ 6.8, 8 wkts",True,2025.0,426.0
+Kamlesh Nagarkoti,All-rounder,Indian,,CSK,9.0,0.46,0.3,False,"econ 9.5, 5 wkts",True,2025.0,213.0
+Anuj Rawat,Wicketkeeper,Indian,,GT,9.0,0.46,0.3,False,"SR 119, avg 20",True,2025.0,267.0
+Aman Khan,All-rounder,Indian,,DC,9.0,0.46,0.3,False,"SR 111, avg 13",True,2025.0,110.0
+Mayank Markande,Spin bowler,Indian,,MI,8.0,0.44,0.3,False,"econ 9.4, 37 wkts",True,2025.0,792.0
+Raghav Goyal,Fast bowler,,,MI,8.0,0.43,0.3,False,No IPL stats yet,True,2025.0,24.0
+Gurnoor Brar,Fast bowler,,,GT,8.0,0.43,0.3,False,No IPL stats yet,True,2025.0,18.0
+Himanshu Sharma,Fast bowler,,,RCB,7.0,0.42,0.3,False,No IPL stats yet,True,2025.0,30.0
+Vignesh Puthur,All-rounder,,,MI,7.0,0.42,0.3,False,"econ 9.1, 6 wkts",True,2025.0,72.0
+Anmolpreet Singh,Batter,Indian,,SRH,7.0,0.42,0.3,False,"SR 121, avg 15",True,2025.0,115.0
+Suyash Prabhudessai,All-rounder,Indian,29,RCB,6.0,0.41,0.3,False,"SR 119, avg 13",True,2025.0,106.0
+Sachin Baby,Batter,Indian,38,SRH,6.0,0.41,0.3,False,"SR 122, avg 16",True,2025.0,128.0
+Hrithik Shokeen,All-rounder,Indian,,MI,6.0,0.41,0.3,False,"SR 102, avg 22 | econ 9.2, 5 wkts",True,2025.0,269.0
+Vidwath Kaverappa,Fast bowler,,,PBKS,6.0,0.41,0.3,False,No IPL stats yet,True,2025.0,24.0
+Raj Angad Bawa,All-rounder,Indian,,MI,5.0,0.4,0.2,False,No IPL stats yet,True,2024.0,56.0
+Kulwant Khejroliya,Spin bowler,Indian,35,GT,5.0,0.4,0.3,False,"econ 11.2, 6 wkts",True,2025.0,151.0
+Sumit Kumar,Wicketkeeper,Indian,31,DC,5.0,0.39,0.3,False,No IPL stats yet,True,2025.0,44.0
+Yash Dhull,All-rounder,Indian,,DC,4.0,0.38,0.3,False,No IPL stats yet,True,2025.0,23.0
+Vivrant Sharma,All-rounder,,,SRH,4.0,0.37,0.3,False,No IPL stats yet,True,2025.0,65.0
+Darshan Nalkande,All-rounder,Indian,,DC,3.0,0.36,0.3,False,"econ 10.6, 6 wkts",True,2025.0,96.0
+Swapnil Singh,All-rounder,,,RCB,3.0,0.36,0.3,False,"econ 8.9, 7 wkts",True,2025.0,207.0
+Baba Indrajith,Wicketkeeper,Indian,,KKR,3.0,0.34,0.3,False,No IPL stats yet,True,2025.0,30.0
+Praveen Dubey,All-rounder,,,PBKS,3.0,0.34,0.3,False,"econ 8.6, 2 wkts",True,2025.0,111.0
+Murugan Ashwin,Spin bowler,Indian,,RR,3.0,0.34,0.3,False,"econ 8.0, 35 wkts",True,2025.0,920.0
+Zeeshan Ansari,Spin bowler,Indian,27,SRH,2.0,0.32,0.3,False,"econ 9.8, 6 wkts",True,2025.0,203.0
+Abhijeet Tomar,Wicketkeeper,Indian,,KKR,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Mohit Avasthi,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Money Grewal,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Lizaad Williams,Fast bowler,,,MI,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Tripuresh Singh,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Tushar Raheja,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Muhammed Adnan Khan,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Mujtaba Yousuf,Fast bowler,Indian,24,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Mukhtar Hussain,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Musaif Ajaz,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Nahid Rana,Fast bowler,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Raj Limbani,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Pankaj Jaswal,Fast bowler,Indian,31,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Pathum Nissanka,Batter,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Patrick Kruger,All-rounder,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Pradosh Ranjan Paul,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Kusal Mendis,Wicketkeeper,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Najibullah Zadran,Batter,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Manvanth Kumar,All-rounder,,,DC,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Agni Chopra,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Ajay Ahlawat,All-rounder,,,,30.0,0.3,0.4,False,No IPL stats yet,False,2025.0,0.0
+Ajay Mandal,All-rounder,,,DC,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Akash Parkar,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Akash Vasisht,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Akhil Chaudhary,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Akhil Rawat,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Tom Latham,Wicketkeeper,,,,30.0,0.3,1.5,False,No IPL stats yet,False,2025.0,0.0
+Will Young,Batter,,,,30.0,0.3,1.25,False,No IPL stats yet,False,2025.0,0.0
+Manoj Bhandage,All-rounder,,,RCB,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Tejasvi Singh,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Tejpreet Singh,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Tom Banton,Wicketkeeper,,,,30.0,0.3,2.0,False,No IPL stats yet,False,2025.0,0.0
+Alex Carey,Wicketkeeper,Overseas,35,,30.0,0.3,1.0,False,No IPL stats yet,False,2025.0,0.0
+Abhishek Saini,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Abid Mushtaq,All-rounder,,,RR,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Mahedi Hasan,All-rounder,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Mahesh Pithiya,Wicketkeeper,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Manish Reddy,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+William O’Rourke,Fast bowler,,,,30.0,0.3,1.5,False,No IPL stats yet,False,2025.0,0.0
+Vijay Yadav,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Vijayakanth Viyaskanth,Fast bowler,Overseas,25,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Vineet Panwar,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Bailapudi Yeswanth,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Benny Howell,All-rounder,Overseas,,PBKS,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Mohamed Ali,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Waqar Salamkheil,Fast bowler,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Wiaan Mulder,All-rounder,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Towhid Hridoy,Batter,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Ayaz Khan,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Matt Henry,Fast bowler,Overseas,35,,30.0,0.3,2.0,False,No IPL stats yet,False,2025.0,0.0
+Matthew Forde,All-rounder,,,,30.0,0.3,1.25,False,No IPL stats yet,False,2025.0,0.0
+Matthew Potts,Fast bowler,,,,30.0,0.3,1.5,False,No IPL stats yet,False,2025.0,0.0
+Lone Nasir,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Mark Chapman,Batter,,,,30.0,0.3,1.5,False,No IPL stats yet,False,2025.0,0.0
+Mayank Gusain,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Mayank Rawat,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Mehidy Hasan Miraz,All-rounder,,,,30.0,0.3,1.0,False,No IPL stats yet,False,2025.0,0.0
+Maramreddy Reddy,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Tripurana Vijay,All-rounder,,,DC,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Lahiru Kumara,Fast bowler,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Lakshay Jain,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Lance Morris,Fast bowler,,,,30.0,0.3,1.25,False,No IPL stats yet,False,2025.0,0.0
+LR Chethan,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Litton Das,Wicketkeeper,,,KKR,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Olly Stone,Fast bowler,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Ottneil Baartman,Fast bowler,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+P Vignesh,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Vijay Kumar,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Bhagmender Lather,Wicketkeeper,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Bharat Sharma,Wicketkeeper,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Hardik Raj,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Ayush Mhatre,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Ayush Pandey,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Ayush Vartak,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Baba Aparajith,All-rounder,Indian,32,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Mayank Agarawal,Batter,,,,30.0,0.3,1.0,False,No IPL stats yet,False,2025.0,0.0
+Vidyadhar Patil,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Bevon Jacobs,Batter,,,MI,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Brandon King,Batter,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Brandon McMullen,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Brydon Carse,All-rounder,,,SRH,30.0,0.3,1.0,False,No IPL stats yet,False,2025.0,0.0
+Ripal Patel,All-rounder,Indian,31,DC,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+David Payne,Fast bowler,,,,30.0,0.3,1.0,False,No IPL stats yet,False,2025.0,0.0
+Shubham Khajuria,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Abhay Choudhary,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Aarya Desai,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Zahir Khan,Fast bowler,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Aaqib Khan,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Unmukt Chand,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Richard Ngarava,Fast bowler,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Harvik Desai,Wicketkeeper,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Jafar Jamal,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+James Anderson,Fast bowler,,,,30.0,0.3,1.25,False,No IPL stats yet,False,2025.0,0.0
+Ramakrishna Ghosh,All-rounder,,,CSK,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Ramesh Prasad,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Ravi Kumar,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Uday Saharan,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Daryn Dupavillon,Fast bowler,Overseas,32,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Prerit Dutta,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Dhruv Kaushik,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Sayed Irfan Aftab,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Charith Asalanka,All-rounder,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Corbin Bosch,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Chetan Sharma,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Deepak Devadiga,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Chintal Gandhi,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Saurabh Netravalkar,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Shubhang Hegde,All-rounder,Indian,26,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Siddarth Kaul,Fast bowler,,,,30.0,0.3,0.4,False,No IPL stats yet,False,2025.0,0.0
+Siddarth Yadav,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Sohraab Dhaliwal,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Sonu Yadav,All-rounder,,,RCB,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Srikar Bharat,Batter,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Ben Dwarshuis,Fast bowler,Overseas,32,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Ben McDermott,Wicketkeeper,Overseas,32,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Saurabh Dubey,Fast bowler,Indian,,SRH,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Chris Green,All-rounder,Overseas,33,,30.0,0.3,1.0,False,No IPL stats yet,False,2025.0,0.0
+Krishnan Shrijith,Batter,,,MI,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Ninad Rathva,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Nishant Sindhu,All-rounder,,,GT,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Zakary Foulkes,All-rounder,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Leus du Plooy,Batter,,,,30.0,0.3,0.5,False,No IPL stats yet,False,2025.0,0.0
+Luke Wood,Fast bowler,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Luvnith Sisodia,Wicketkeeper,Indian,,KKR,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+M Ajnas,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Krishnappa Gowtham,All-rounder,,,,30.0,0.3,1.0,False,No IPL stats yet,False,2025.0,0.0
+Mohammed Azharuddeen,Wicketkeeper,Indian,33,RCB,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Kyle Verreynne,Batter,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Ali Khan,Fast bowler,Overseas,36,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Swastik Chikara,Batter,,,RCB,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Yeddala Reddy,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Aaron Hardie,All-rounder,Overseas,28,PBKS,30.0,0.3,1.25,False,No IPL stats yet,False,2025.0,0.0
+Yuvraj Chaudhary,All-rounder,,,LSG,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Yuvraj Chudasama,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Aaradhya Shukla,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Madhav Kaushik,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Kritagya Singh,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Kunal Singh Chibb,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Kunal Singh Rathore,Batter,,,RR,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Naman Tiwari,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Nangeyalia Kharote,All-rounder,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Narayan Jagadeesan,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Nathan Smith,All-rounder,,,,30.0,0.3,1.0,False,No IPL stats yet,False,2025.0,0.0
+Nishunk Birla,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Nqabayomzi Peter,Fast bowler,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Johnson Charles,Wicketkeeper,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Ollie Pope,Batter,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Keshav Maharaj,All-rounder,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Khrievitso Kense,All-rounder,Indian,23,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Kiran Chormale,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Jonty Sidhu,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Rithik Easwaran,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Jeffrey Vandersay,Fast bowler,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Jhathavedh Subramanyan,Fast bowler,,,SRH,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+John Turner,Fast bowler,,,,30.0,0.3,1.5,False,No IPL stats yet,False,2025.0,0.0
+Oliver Davies,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Rajan Kumar,Fast bowler,,,RCB,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Raj Bawa,All-rounder,,,MI,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Rajneesh Gurbani,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Gus Atkinson,All-rounder,,,KKR,30.0,0.3,2.0,False,No IPL stats yet,False,2025.0,0.0
+Jasinder Singh,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Jordan Cox,Batter,,,,30.0,0.3,1.25,False,No IPL stats yet,False,2025.0,0.0
+Josh Little,Fast bowler,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Harnoor Singh,Batter,,,PBKS,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Michael Neser,All-rounder,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Harsh Tyagi,All-rounder,Indian,27,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Ibrahim Zadran,Batter,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Hasan Mahmud,Fast bowler,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Hemanth Kumar,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Hilton Cartwright,All-rounder,Overseas,35,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Himanshu Chauhan,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Qais Ahmad,All-rounder,Overseas,26,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Josh Philippe,Batter,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Joshua Brown,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Harry Tector,Batter,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Roston Chase,All-rounder,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Sabhay Chadha,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Sachin Dhas,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Hardik Tamore,Wicketkeeper,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Salman Nizar,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Samarth Nagaraj,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Samarth Vyas,All-rounder,,,SRH,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Sandeep Warrier,All-rounder,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Sanskar Rawat,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Rishad Hossain,Fast bowler,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Saranu Nishanth,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Shivalik Sharma,All-rounder,,,MI,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Shivam Shukla,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Shoriful Islam,Fast bowler,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Shoun Roger,Batter,,,,30.0,0.3,0.4,False,No IPL stats yet,False,2025.0,0.0
+Shreyas Chavan,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Ben Sears,Fast bowler,,,,30.0,0.3,1.0,False,No IPL stats yet,False,2025.0,0.0
+Daniel Worrall,Fast bowler,,,,30.0,0.3,1.5,False,No IPL stats yet,False,2025.0,0.0
+Girinath Reddy,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Saransh Jain,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Pratham Singh,All-rounder,Indian,34,KKR,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+James Vince,Batter,,,,30.0,0.3,2.0,False,No IPL stats yet,False,2025.0,0.0
+Kusal Perera,Wicketkeeper,Overseas,36,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Karteek Sharma,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+C Andre Siddarth,Batter,,,CSK,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Abhishek Nair,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Jasmer Dhankhar,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Cooper Connolly,All-rounder,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Junior Dala,All-rounder,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Kartik Chadha,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Utkarsh Singh,All-rounder,Indian,28,PBKS,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Will Sutherland,All-rounder,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Himanshu Singh,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Umang Kumar,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Writtick Chatterjee,All-rounder,Indian,,PBKS,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Abhimanyu Easwaran,Wicketkeeper,Indian,31,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Yajas Sharma,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Yash Dabas,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Abhilash Shetty,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Upendra Yadav,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Kamal Tripathi,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Kamindu Mendis,All-rounder,,,SRH,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Prayas Ray Barman,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Ravi Kumar Yadav,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Richard Gleeson,Fast bowler,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Kaushik Maity,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Keemo Paul,All-rounder,Overseas,29,,30.0,0.3,1.25,False,No IPL stats yet,False,2025.0,0.0
+Prince Choudhary,Fast bowler,,,PBKS,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Prithvi Raj,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Prateek Yadav,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Pulkit Narang,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Pyla Avinash,Batter,,,PBKS,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Rituraj Sharma,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Rohan  Kunnummal,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Rohan Rana,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Pradyuman Singh,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Praful Hinge,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Prashant Chauhan,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Prashant Painkra,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Pukhraj Mann,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Anirudh Kanwar,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Arpit Guleria,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Aryaman Singh,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Aryan Juyal,Wicketkeeper,Indian,25,LSG,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Ashish Dahariya,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Ashton Agar,All-rounder,,,,30.0,0.3,1.25,False,No IPL stats yet,False,2025.0,0.0
+Vishal Godara,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Baltej Singh,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Guruswamy Ajitesh,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Shubham Agarwal,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Shubham Garhwal,All-rounder,Indian,,RR,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Shubham Kapse,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Atif Mushtaq,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Atit Sheth,All-rounder,Indian,31,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Digvesh Singh,All-rounder,,,LSG,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Digvijay Deshmukh,All-rounder,Indian,28,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Dilshan Madushanka,Fast bowler,,,MI,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Dinesh Bana,Wicketkeeper,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Ben Duckett,Wicketkeeper,Overseas,32,,30.0,0.3,2.0,False,No IPL stats yet,False,2025.0,0.0
+Michael Pepper,Batter,,,,30.0,0.3,0.5,False,No IPL stats yet,False,2025.0,0.0
+Mikyle Louis,Batter,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Sudhesan Midhun,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Sudip Kumar Gharami,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Sumeet Verma,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Sumit Beniwal,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Sumit Ghadigaonkar,Wicketkeeper,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Sushant Mishra,Fast bowler,,,GT,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Ashwin Hebbar,Batter,Indian,,DC,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Avneesh Sudha,Wicketkeeper,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Tabraiz Shamsi,Fast bowler,,,,30.0,0.3,2.0,False,No IPL stats yet,False,2025.0,0.0
+Tanay Thyagarajan,Fast bowler,Indian,31,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Tanmay Agarwal,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Anirudh Chowdhary,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Arjun Azad,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Ankit Rajpoot,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Anmol Malhotra,Wicketkeeper,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Steven Smith,Batter,,,,30.0,0.3,2.0,False,No IPL stats yet,False,2025.0,0.0
+Avinash Singh,Fast bowler,,,RCB,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Vishnu Solanki,Wicketkeeper,Indian,34,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Alick Athanaze,All-rounder,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Amandeep Khare,Batter,Indian,29,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Andre Fletcher,Wicketkeeper,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Vaisakh Chandran,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Vansh Bedi,Batter,,,CSK,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Vasu Vats,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Vicky Ostwal,All-rounder,Indian,,DC,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Sairaj Patil,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Dominic Drakes,All-rounder,Overseas,,GT,30.0,0.3,1.25,False,No IPL stats yet,False,2025.0,0.0
+Dipesh Parwani,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Dunith Wellalage,All-rounder,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Blessing Muzarabani,Fast bowler,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Dan Lawrence,All-rounder,,,,30.0,0.3,1.0,False,No IPL stats yet,False,2025.0,0.0
+Satyanarayana Raju,Fast bowler,,,MI,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Saumy Pandey,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Sarthak Ranjan,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Gaurav Gambhir,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Dan Mousley,All-rounder,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Gudakesh Motie,All-rounder,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Dumindu Sewmina,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Dushan Hemantha,All-rounder,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Shashwat Rawat,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Shiva Singh,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Apoorv Wankhade,Batter,Indian,35,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Aravelly Avanish,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Divesh Sharma,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Emanjot Singh Chahal,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Faridoon Dawoodzai,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Finn Allen,Wicketkeeper,Overseas,27,RCB,30.0,0.3,2.0,False,No IPL stats yet,False,2025.0,0.0
+Vishwanath Singh,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Roshan Waghsare,Fast bowler,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Bipin Saurabh,Wicketkeeper,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Atharva Ankolekar,All-rounder,Indian,26,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Atharva Kale,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Tanveer Sangha,Fast bowler,Overseas,25,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Tanzim Hasan Sakib,Fast bowler,,,,30.0,0.3,0.75,False,No IPL stats yet,False,2025.0,0.0
+Taskin Ahmed,Fast bowler,,,,30.0,0.3,1.0,False,No IPL stats yet,False,2025.0,0.0
+Tejasvi Dahiya,Batter,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Tejasvi Jaiswal,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Rohit Rayudu,All-rounder,,,,30.0,0.3,0.3,False,No IPL stats yet,False,2025.0,0.0
+Shreyas Gopal,Spin bowler,Indian,,CSK,2.0,0.29,0.3,False,"SR 107, avg 13 | econ 8.2, 52 wkts",True,2025.0,1160.0
+Prashant Solanki,Fast bowler,Indian,,CSK,1.0,0.28,0.3,False,No IPL stats yet,True,2025.0,36.0
+Rajvardhan Hangargekar,All-rounder,Indian,,LSG,1.0,0.28,0.3,False,No IPL stats yet,True,2025.0,36.0
+Ishan Porel,Fast bowler,Indian,,PBKS,1.0,0.28,0.3,False,No IPL stats yet,True,2025.0,24.0
+Jalaj Saxena,All-rounder,Indian,40,PBKS,1.0,0.28,0.4,False,No IPL stats yet,True,2025.0,18.0
