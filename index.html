@@ -646,7 +646,7 @@ function botReply(q){
   const s=q.toLowerCase(),T=teams(),me=T.find(t=>t.id===S.me),pl=plan(me),p=P[S.pid],e=ev(p,me,pl),k=p.ri;
   const role=/fast|pace/.test(s)?3:/spin/.test(s)?4:/all.?round/.test(s)?2:/keeper|wicket/.test(s)?1:/bat/.test(s)?0:-1;
   const ind=/indian/.test(s),ovs=/overseas|foreign/.test(s),m=s.match(/under\s*(\d+(\.\d+)?)/),lim=m?parseFloat(m[1]):null;
-  const nm=P.filter(x=>{const n=x.name.toLowerCase(),parts=n.split(' ');return s.includes(n)||(parts.length>1&&parts.slice(1).join(' ').length>3&&s.includes(parts.slice(1).join(' ')));});
+  const nm=findPlayers(q);
   if(nm.length&&nm.length<=3&&!/who else|rivals?\b/.test(s)){const x=nm[0],v=ev(x,me,pl);return `<b>${esc(x.name)}</b> (${x.role}, ${nat(x)}): ${v.skip?'<b style="color:var(--rd)">SKIP</b>':'<b style="color:var(--gr)">BID up to '+fmt(v.ceil)+'</b>'}. Fair price ${fmt(x.fair)}, starts ${fmt(x.base)}, score ${x.score}. ${esc(v.reason)}`;}
   if(/(what|explain|mean).*(score|rating)|score.*mean/.test(s))return `Score is a 0 to 100 rating of how good a player is. Higher is better. ${p.name} has ${p.score}. It comes from his IPL runs, strike rate, wickets and economy. Recent seasons count more.`;
   if(/squad size|quad size/.test(s))return `Squad size is how many players are in your team. The limit is ${S.rules.squad}. You have ${S.rules.squad-me.spots} now.`;
@@ -683,7 +683,19 @@ function botReply(q){
   }
   return 'I could not match that to a player or a topic. Try a player name like "Jos Buttler", or "Why this limit?" or "best Indian fast bowlers under 2 crore".';
 }
-function hootieContext(){
+const NICK={msd:'MS Dhoni',thala:'MS Dhoni',mahi:'MS Dhoni',hitman:'Rohit Sharma',jaddu:'Ravindra Jadeja',sky:'Suryakumar Yadav',king:'Virat Kohli',boom:'Jasprit Bumrah',kl:'KL Rahul',dre:'Andre Russell',russ:'Andre Russell',hardik:'Hardik Pandya'};
+function ed1(a,b){if(a===b)return true;if(Math.abs(a.length-b.length)>1)return false;let i=0,j=0,d=0;while(i<a.length&&j<b.length){if(a[i]===b[j]){i++;j++;continue;}if(++d>1)return false;if(a.length>b.length)i++;else if(b.length>a.length)j++;else{i++;j++;}}return d+(a.length-i)+(b.length-j)<=1;}
+function findPlayers(q){const s=(q||'').toLowerCase().replace(/[^a-z ]/g,' '),w=s.split(/\s+/).filter(Boolean),out=new Map();
+  const add=(x,n)=>{if(x)out.set(x.i,Math.max(out.get(x.i)||0,n));};
+  w.forEach(t=>{if(NICK[t])add(P.find(x=>x.name===NICK[t]),50);});
+  P.forEach(x=>{const n=x.name.toLowerCase(),ps=n.split(' ');let sc=0;
+    if(s.includes(n))sc=100;
+    else ps.forEach((p,k)=>{if(p.length<3)return;const last=k===ps.length-1;
+      if(w.includes(p))sc+=last?50:40;else if(p.length>=5&&w.some(t=>t.length>=4&&ed1(t,p)))sc+=last?25:20;});
+    if(sc)add(x,sc);});
+  const l=[...out].sort((a,b)=>b[1]-a[1]);if(!l.length)return[];const top=l[0][1];
+  return l.filter(e=>e[1]>=top*0.8).slice(0,6).map(e=>P.find(x=>x.i===e[0]));}
+function hootieContext(q){q=(q||'').toLowerCase();
   const T=teams(),me=T.find(t=>t.id===S.me),pl=plan(me),p=P[S.pid],e=ev(p,me,pl);
   const top=unsoldList().map(x=>({x,v:ev(x,me,pl)})).filter(o=>!o.v.skip).sort((a,b)=>b.x.score*b.v.w-a.x.score*a.v.w).slice(0,10);
   const L=o=>`${o.x.name} (${o.x.role}, ${nat(o.x)}, score ${o.x.score}, fair ${fmt(o.x.fair)}, starts ${fmt(o.x.base)}) -> bid up to ${fmt(o.v.ceil)}. ${o.v.reason}`;
@@ -692,15 +704,18 @@ function hootieContext(){
    `ON THE BLOCK: ${p.name} (${p.role}, ${nat(p)}, ${ageS(p)}, score ${p.score}/100, fair ${fmt(p.fair)}, starts ${fmt(p.base)}). Past stats: ${p.stats}. Advice: ${e.skip?'SKIP':'bid up to '+fmt(e.ceil)}. ${e.reason}`,
    `RIVALS: ${T.filter(t=>t.id!==me.id).map(t=>t.id+' '+fmt(t.money)+', '+t.spots+' spots, last season '+t.pos).join('; ')}`,
    `TOP PICKS FOR ME NOW:\n${top.map(L).join('\n')}`,
+   (()=>{const m=findPlayers(q);return m.length?'PLAYERS MENTIONED IN THE QUESTION:\n'+m.map(x=>{const v=ev(x,me,pl),sold=S.sales.find(s=>s[0]===x.i);return `${x.name} (${x.role}, ${nat(x)}, ${ageS(x)}, IPL team ${x.team||'n/a'}, ${sold?'SOLD to '+sold[1]+' for '+fmt(sold[2]):isUnsold(x.i)?'unsold, in this auction':'retained, not in this auction'}, score ${x.score}/100, fair ${fmt(x.fair)}, starts ${fmt(x.base)}, ${statFor(x)}) -> my advice: ${v.skip?'SKIP':'bid up to '+fmt(v.ceil)}. ${v.reason}`;}).join('\n'):'PLAYERS MENTIONED IN THE QUESTION: none matched by name.';})(),
+   'ALL PLAYERS IN THIS AUCTION (name | role | I=Indian O=Overseas | fair price | my limit):\n'+unsoldList().map(x=>{const v=ev(x,me,pl);return x.name+' | '+['BAT','WK','AR','PACE','SPIN'][x.ri]+' | '+nat(x)[0]+' | '+fmt(x.fair)+' | '+(v.skip?'skip':fmt(v.ceil));}).join('\n'),
+   'BEST UNSOLD BY ROLE (name, fair price, my limit):\n'+ROLES.map((r,k)=>r+': '+unsoldList().filter(x=>x.ri===k).slice(0,5).map(x=>{const v=ev(x,me,pl);return x.name+' ('+nat(x)[0]+', fair '+fmt(x.fair)+', '+(v.skip?'skip':'limit '+fmt(v.ceil))+')';}).join('; ')).join('\n'),
    `SALES SO FAR: ${S.sales.slice(-15).map(s=>P[s[0]].name+' to '+s[1]+' '+fmt(s[2])).join('; ')||'none'}`,
    `RULES: max bid = fair price plus 15% at most, and keep the lowest start price for each other empty spot. Score is 0 to 100 from past IPL stats, recent seasons count more.`].join('\n');
 }
 function ask(q){q=q.trim();if(!q)return;const cq=document.getElementById('cq');if(cq)cq.value='';
-  const local=botReply(q);S.chat.push({who:'me',html:esc(q)});
+  const local=botReply(q),hist=S.chat.slice(-6).map(c=>({who:c.who,text:String(c.html||'').replace(/<div class="mu"[\s\S]*$/,'').replace(/<[^>]+>/g,' ').replace(/&amp;/g,'&').replace(/\s+/g,' ').trim().slice(0,400)})).filter(c=>c.text&&!/Hootie is thinking/.test(c.text));S.chat.push({who:'me',html:esc(q)});
   if(!S.ai||location.protocol==='file:'){S.chat.push({who:'bot',html:local});render(true);return;}
   const m={who:'bot',html:'<span class="mu">Hootie is thinking...</span>'};S.chat.push(m);render(true);
   const ctl=new AbortController(),tm=setTimeout(()=>ctl.abort(),20000);
-  fetch('/.netlify/functions/hootie',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q,context:hootieContext()}),signal:ctl.signal})
+  fetch('/.netlify/functions/hootie',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q,context:hootieContext(q),history:hist}),signal:ctl.signal})
    .then(r=>r.json().catch(()=>({})).then(j=>{if(!r.ok||!j.answer)throw new Error(j.error||('Hootie service not found (status '+r.status+')'));return j;})).then(j=>{m.html=esc(j.answer).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>').replace(/\n/g,'<br>');})
    .catch(er=>{m.html=local+'<div class="mu" style="font-size:11px;margin-top:6px">AI offline: '+esc(er&&er.name==='AbortError'?'took too long':(er&&er.message)||'no connection')+'. This is the built-in answer.</div>';}).finally(()=>{clearTimeout(tm);render(true);});
 }
