@@ -38,7 +38,7 @@ async function pickModels(key) {
       .map(m => m.name.replace("models/", ""))
       .filter(n => /^gemini-\d/.test(n) && /flash/.test(n) && !bad.test(n))
       .map(n => ({ n, v: parseFloat((n.match(/^gemini-(\d+(?:\.\d+)?)/) || [0, 0])[1]), lite: /lite/.test(n), pre: /preview/.test(n) }))
-      .sort((x, y) => y.v - x.v || x.pre - y.pre || x.lite - y.lite)
+      .sort((x, y) => y.v - x.v || x.pre - y.pre || y.lite - x.lite)
       .map(o => o.n);
   } catch (e) {}
   if (!list.length) list = ["gemini-3.5-flash", "gemini-3.5-flash-lite", "gemini-2.5-flash"];
@@ -46,37 +46,16 @@ async function pickModels(key) {
   return list;
 }
 
-async function ask(model, key, system, q, ms) {
+// One call to Gemini. "Thinking" is turned down so answers come back fast.
+async function call(model, key, system, q, ms, think) {
   const ctl = new AbortController(); const t = setTimeout(() => ctl.abort(), ms);
+  const gen = { temperature: 0.2, maxOutputTokens: 1200 };
+  if (think) gen.thinkingConfig = /^gemini-3/.test(model) ? { thinkingLevel: "minimal" } : { thinkingBudget: 0 };
   try {
     const r = await fetch(`${API}models/${model}:generateContent`, {
       method: "POST", signal: ctl.signal,
       headers: { "Content-Type": "application/json", "x-goog-api-key": key },
-      body: JSON.stringify({ systemInstruction: { parts: [{ text: system }] }, contents: [{ role: "user", parts: [{ text: q }] }], generationConfig: { temperature: 0.2, maxOutputTokens: 1200 } })
+      body: JSON.stringify({ systemInstruction: { parts: [{ text: system }] }, contents: [{ role: "user", parts: [{ text: q }] }], generationConfig: gen })
     });
     const j = await r.json();
-    const a = (j?.candidates?.[0]?.content?.parts || []).map(p => p.text || "").join("").trim();
-    if (a) return { answer: a };
-    return { error: j?.error?.message ? model + ": " + String(j.error.message).slice(0, 140) : model + " sent an empty answer" };
-  } catch (e) { return { error: e.name === "AbortError" ? model + " took too long" : "Could not reach Gemini" }; }
-  finally { clearTimeout(t); }
-}
-
-exports.handler = async (event) => {
-  const key = process.env.GEMINI_API_KEY;
-  if (event.httpMethod === "GET") return J(200, { ok: true, keySet: !!key, models: key && event.queryStringParameters && event.queryStringParameters.models ? await pickModels(key) : undefined });
-  if (event.httpMethod !== "POST") return J(405, { error: "POST only" });
-  if (!key) return J(500, { error: "No GEMINI_API_KEY set in Netlify" });
-  let q = "", ctx = "";
-  try { const b = JSON.parse(event.body || "{}"); q = String(b.question || "").slice(0, 400); ctx = String(b.context || "").slice(0, 14000); } catch (e) {}
-  if (!q) return J(400, { error: "No question" });
-  const system = SYSTEM(ctx); let last = "No answer"; const start = Date.now();
-  const models = (await pickModels(key)).slice(0, 3);
-  for (const m of models) {                          // Netlify stops functions at about 10 seconds
-    const left = 9300 - (Date.now() - start); if (left < 1500) break;
-    const r = await ask(m, key, system, q, Math.min(left, 6500));
-    if (r.answer) return J(200, { answer: r.answer, model: m });
-    last = r.error;
-  }
-  return J(502, { error: last });
-};
+    const a = (j?.candidates?.[0]?.content?.parts || []).map(p =>
