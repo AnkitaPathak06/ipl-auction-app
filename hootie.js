@@ -1,8 +1,9 @@
 // Hootie: answers ONLY IPL auction questions, using the data the app sends. The Gemini key stays secret here.
 exports.handler = async (event) => {
   const cors = { "Content-Type": "application/json" };
-  if (event.httpMethod !== "POST") return { statusCode: 405, headers: cors, body: JSON.stringify({ error: "POST only" }) };
   const key = process.env.GEMINI_API_KEY;
+  if (event.httpMethod === "GET") return { statusCode: 200, headers: cors, body: JSON.stringify({ ok: true, keySet: !!key }) };
+  if (event.httpMethod !== "POST") return { statusCode: 405, headers: cors, body: JSON.stringify({ error: "POST only" }) };
   if (!key) return { statusCode: 500, headers: cors, body: JSON.stringify({ error: "No key set" }) };
   let q = "", ctx = "";
   try { const b = JSON.parse(event.body || "{}"); q = String(b.question || "").slice(0, 500); ctx = String(b.context || "").slice(0, 12000); } catch (e) {}
@@ -23,12 +24,12 @@ ${ctx}`;
       body: JSON.stringify({
         systemInstruction: { parts: [{ text: system }] },
         contents: [{ role: "user", parts: [{ text: q }] }],
-        generationConfig: { temperature: 0.3, maxOutputTokens: 400 }
+        generationConfig: { temperature: 0.3, maxOutputTokens: 800, thinkingConfig: { thinkingBudget: 0 } }
       })
     });
     const j = await r.json();
     const a = j?.candidates?.[0]?.content?.parts?.map(p => p.text).join("") || "";
-    if (!a) return { statusCode: 502, headers: cors, body: JSON.stringify({ error: "No answer" }) };
+    if (!a) return { statusCode: 502, headers: cors, body: JSON.stringify({ error: (j && j.error && j.error.message) ? "Gemini: " + String(j.error.message).slice(0, 160) : "Gemini sent an empty answer" }) };
     return { statusCode: 200, headers: cors, body: JSON.stringify({ answer: a.trim() }) };
   } catch (e) { return { statusCode: 502, headers: cors, body: JSON.stringify({ error: "AI error" }) }; }
 };

@@ -383,7 +383,7 @@ function loginView(){
     <div><label class="lbl" for="lt">Team</label><select id="lt" class="fld" data-in="loginTeam">${TEAMS.map(t=>`<option value="${t.id}" ${S.loginTeam===t.id?'selected':''}>${t.name} (${t.id})</option>`).join('')}</select></div>
     <div><label class="lbl" for="lp">Access code</label><input id="lp" class="fld" type="password" value="demo123"></div>
     <button class="btn w" data-act="login">Log in</button>
-    <button class="btn2 w mus" data-act="mus" aria-pressed="${S.music}">${ic(S.music?'snd':'mute')} Music ${S.music?'on':'off'}</button></div></div></div>`;
+    <button class="btn2 w mus" data-act="mus" aria-pressed="${S.music}">${ic(S.music?'snd':'mute')} ${S.musicErr?'Music file not found':'Music '+(S.music?'on':'off')}</button></div></div></div>`;
 }
 /* ---------- shared pieces ---------- */
 function topBar(me){
@@ -646,6 +646,8 @@ function botReply(q){
   const s=q.toLowerCase(),T=teams(),me=T.find(t=>t.id===S.me),pl=plan(me),p=P[S.pid],e=ev(p,me,pl),k=p.ri;
   const role=/fast|pace/.test(s)?3:/spin/.test(s)?4:/all.?round/.test(s)?2:/keeper|wicket/.test(s)?1:/bat/.test(s)?0:-1;
   const ind=/indian/.test(s),ovs=/overseas|foreign/.test(s),m=s.match(/under\s*(\d+(\.\d+)?)/),lim=m?parseFloat(m[1]):null;
+  const nm=P.filter(x=>{const n=x.name.toLowerCase(),parts=n.split(' ');return s.includes(n)||(parts.length>1&&parts.slice(1).join(' ').length>3&&s.includes(parts.slice(1).join(' ')));});
+  if(nm.length&&nm.length<=3&&!/who else|rivals?\b/.test(s)){const x=nm[0],v=ev(x,me,pl);return `<b>${esc(x.name)}</b> (${x.role}, ${nat(x)}): ${v.skip?'<b style="color:var(--rd)">SKIP</b>':'<b style="color:var(--gr)">BID up to '+fmt(v.ceil)+'</b>'}. Fair price ${fmt(x.fair)}, starts ${fmt(x.base)}, score ${x.score}. ${esc(v.reason)}`;}
   if(/(what|explain|mean).*(score|rating)|score.*mean/.test(s))return `Score is a 0 to 100 rating of how good a player is. Higher is better. ${p.name} has ${p.score}. It comes from his IPL runs, strike rate, wickets and economy. Recent seasons count more.`;
   if(/squad size|quad size/.test(s))return `Squad size is how many players are in your team. The limit is ${S.rules.squad}. You have ${S.rules.squad-me.spots} now.`;
   if(/^(hi|hello|hey)\b/.test(s))return 'Hi! Try: "Why this limit?", "Who else wants him?" or "best Indian fast bowlers under 2 crore".';
@@ -679,7 +681,7 @@ function botReply(q){
     if(!l.length)return 'I found no unsold players for that. Try a wider price or role.';
     return `${lim!==null?'Unsold players starting under '+lim+' cr':'Best unsold players'}, best score first:`+l.map(x=>pickHtml(x,me,pl)).join('');
   }
-  return 'Try: "Why this limit?", "Who else wants him?" or "best Indian fast bowlers under 2 crore".';
+  return 'I could not match that to a player or a topic. Try a player name like "Jos Buttler", or "Why this limit?" or "best Indian fast bowlers under 2 crore".';
 }
 function hootieContext(){
   const T=teams(),me=T.find(t=>t.id===S.me),pl=plan(me),p=P[S.pid],e=ev(p,me,pl);
@@ -699,8 +701,8 @@ function ask(q){q=q.trim();if(!q)return;const cq=document.getElementById('cq');i
   const m={who:'bot',html:'<span class="mu">Hootie is thinking...</span>'};S.chat.push(m);render(true);
   const ctl=new AbortController(),tm=setTimeout(()=>ctl.abort(),20000);
   fetch('/.netlify/functions/hootie',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q,context:hootieContext()}),signal:ctl.signal})
-   .then(r=>r.ok?r.json():Promise.reject()).then(j=>{if(!j||!j.answer)throw 0;m.html=esc(j.answer).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>').replace(/\n/g,'<br>');})
-   .catch(()=>{m.html=local;}).finally(()=>{clearTimeout(tm);render(true);});
+   .then(r=>r.json().catch(()=>({})).then(j=>{if(!r.ok||!j.answer)throw new Error(j.error||('Hootie service not found (status '+r.status+')'));return j;})).then(j=>{m.html=esc(j.answer).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>').replace(/\n/g,'<br>');})
+   .catch(er=>{m.html=local+'<div class="mu" style="font-size:11px;margin-top:6px">AI offline: '+esc(er&&er.name==='AbortError'?'took too long':(er&&er.message)||'no connection')+'. This is the built-in answer.</div>';}).finally(()=>{clearTimeout(tm);render(true);});
 }
 
 /* ============ EVENTS ============ */
@@ -775,11 +777,11 @@ function celebrate(p,buyer,price){
   fxStop=end;$fx.onclick=end;timer=setTimeout(end,4600);
 }
 /* ---------- landing music: original stadium-style tune, made in the browser ---------- */
-let MU=null;const AUD=new Audio('music/login.mp3');AUD.loop=true;AUD.volume=.7;
+let MU=null;const AUD=new Audio('music/login.mp3');AUD.loop=true;AUD.volume=.7;AUD.addEventListener('error',()=>{S.musicErr=true;MU=null;if(S.screen==='login')render();});
 function musicStop(){if(!MU)return;MU=null;try{AUD.pause();}catch(e){}}
 function musicStart(){if(MU)return;MU={};try{const p=AUD.play();if(p&&p.catch)p.catch(()=>{MU=null;});}catch(e){MU=null;}}
-document.addEventListener('pointerdown',e=>{if(S.screen==='login'&&S.music&&!MU&&!e.target.closest('[data-act=mus]'))musicStart();});
-document.addEventListener('keydown',e=>{if(S.screen==='login'&&S.music&&!MU)musicStart();},{once:false});
+['pointerdown','pointerup','click','touchend','keydown'].forEach(ev=>document.addEventListener(ev,e=>{if(S.screen==='login'&&S.music&&!MU&&!(e.target.closest&&e.target.closest('[data-act=mus]')))musicStart();},true));
+window.addEventListener('load',()=>{if(S.screen==='login'&&S.music)musicStart();});
 /* ---------- events ---------- */
 document.addEventListener('click',e=>{
   const b=e.target.closest('#view [data-act],#chatroot [data-act]');if(!b)return;
